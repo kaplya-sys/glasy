@@ -1,0 +1,22 @@
+.form-login__label {
+  margin-bottom: 16px;
+
+  &--password {
+    margin-bottom: 32px;
+  }
+}
+
+.form-login__button {
+  min-width: 113px;
+  margin-right: 23px;
+  color: $secondary-white;
+  background-color: $extra-bright;
+  border: 4px solid rgba($extra-bright, 0.3);
+}
+
+.form-login__link {
+  display: flex;
+  margin-bottom: 4px;
+  color: $secondary-black;
+  text-underline-offset: 4px;
+}

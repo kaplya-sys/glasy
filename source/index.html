@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body class="page__body body">
+  <!--body-theme--theme-1 body-theme--theme-2 body-theme--theme-3-->
+  <header class="body__header header body-theme--theme-1">
+    <div class="container">
+      <nav class="header__nav">
+        <ul class="header__list site-list">
+          <li class="site-list__item site-list__item--logo">
+            <a class="site-list__header-logo" href="index.html">
+              <img src="images/logo.svg" width="137" height="56" alt="Логотип Магазина Глейси.">
+            </a>
+          </li>
+          <li class="site-list__item">
+            <div class="site-list__select header-select">
+              <button class="header-select__button" type="button">
+                <svg class="header-select__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="header-select__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
+                </svg>
+                Каталог
+              </button>
+              <ul class="header-select__list">
+                <li class="header-select__item header-select__item--current">
+                  <a class="header-select__link" href="#">Новинки</a>
+                </li>
+                <li class="header-select__item">
+                  <a class="header-select__link" href="#">Сливочное</a>
+                </li>
+                <li class="header-select__item">
+                  <a class="header-select__link" href="#">Щербеты</a>
+                </li>
+                <li class="header-select__item">
+                  <a class="header-select__link" href="#">Фруктовый лед</a>
+                </li>
+                <li class="header-select__item">
+                  <a class="header-select__link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">О компании</a>
+          </li>
+        </ul>
+        <ul class="header__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__contact-phone" href="tel:88005558628">+7 800 555-86-28</a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--search" href="#">
+              <svg class="user-list__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path class="user-list__icon-path" fill="#2D3440" fill-rule="evenodd" d="M2.663 7.33a4.667 4.667 0 1 1 8.028 3.238.683.683 0 0 0-.123.123A4.667 4.667 0 0 1 2.664 7.33Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" clip-rule="evenodd"/>
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </a>
+            <div class="user-list__popover header-popover header-popover--search">
+              <form class="header-popover__form form-search" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="form-search__label label" for="search">
+                  <span class="visually-hidden">Введите запрос</span>
+                  <input class="form-search__field field" type="text" id="search" placeholder="Поиск по сайту">
+                  <button class="form-search__button" type="button">
+                    <span class="visually-hidden">Очистить</span>
+                  </button>
+                </label>
+              </form>
+            </div>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="user-list__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M9 2.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H9.7a.7.7 0 1 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V3.9a.7.7 0 0 0-.7-.7H9.7a.7.7 0 0 1-.7-.7ZM5.9 4.7c.2-.2.6-.2.9 0L10.1 8a.7.7 0 0 1 .2.2.7.7 0 0 1-.2.8l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H1.7a.7.7 0 1 1 0-1.3H8L5.9 5.7a.7.7 0 0 1 0-1Z" fill="#2D3440"/>
+              </svg>
+              Вход
+            </a>
+            <div class="user-list__popover header-popover header-popover--login">
+              <h2 class="header-popover__title">Личный кабинет</h2>
+              <form class="header-popover__form form-login" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="form-login__label label" for="email">
+                  <span class="visually-hidden">Электронная почта</span>
+                  <input class="form-login__field field" type="email" id="email" placeholder="email@example.com">
+                </label>
+                <label class="form-login__label form-login__label--password label" for="password">
+                  <span class="visually-hidden">Пароль</span>
+                  <input class="form-login__field field" type="password" id="password" value="111111">
+                </label>
+                <button class="form-login__button button" type="submit">Войти</button>
+                <div class="form-login__link-wpapper">
+                  <a class="form-login__link" href="#">Забыли пароль?</a>
+                  <a class="form-login__link" href="#">Регистрация</a>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="user-list__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.2 2.1a.7.7 0 0 0 0 1.3h1.7l.5 2.4 1 4.9A1.8 1.8 0 0 0 6.2 12h5.6a1.8 1.8 0 0 0 1.8-1.4l1-4.9a.7.7 0 0 0-.7-.8H4.6l-.5-2.4c0-.3-.3-.5-.6-.5H1.2Zm4.5 8.3-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="#2D3440"/>
+              </svg>
+              <span class="visually-hidden">Корзина</span>
+              <span class="user-list__count-product">2 товара</span>
+            </a>
+            <!--header-popover--basket-->
+            <div class="user-list__popover header-popover">
+              <p class="header-popover__basket-text">Ваша корзина пока пуста</p>
+              <div class="header-popover__popover-wrapper">
+                <h2 class="header-popover__title">Корзина</h2>
+                <ul class="header-popover__list basket-list">
+                  <li class="basket-list__item">
+                    <img class="basket-list__image" src="images/ice_cream_ball.jpg" width="46" height="46" alt="Мороженое «Малинка»."/>
+                    <div class="basket-list__purchase-info-wrapper">
+                      <h3 class="basket-list__title">Малинка</h3>
+                      <span class="basket-list__text">1 кг х 310 ₽</span>
+                    </div>
+                    <span class="basket-list__price">310 ₽</span>
+                    <button class="basket-list__close-button" type="button">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                  <li class="basket-list__item">
+                    <img class="basket-list__image" src="images/ice_cream_ball_1.jpg" width="46" height="46" alt="Мороженое «Бабл-гам».">
+                    <div class="basket-list__purchase-info-wrapper">
+                      <h3 class="basket-list__title">Бабл-гам</h3>
+                      <span class="basket-list__text">1,5 кг х 320 ₽</span>
+                    </div>
+                    <span class="basket-list__price">480 ₽</span>
+                    <button class="basket-list__close-button" type="button">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                </ul>
+                <a class="header-popover__button button" href="#">Оформить заказ</a>
+                <span class="header-popover__total">Итого: 790 ₽</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="body__main main body-theme--theme-1">
+    <div class="container">
+
+    </div>
+  </main>
+  <footer class="body__footer footer body-theme--theme-1">
+    <div class="container">
+      <nav class="footer__nav">
+        <ul class="footer__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://t.me/htmlacademy" target="blank">
+              <span class="visually-hidden">Телеграм</span>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.6-3.1a563.2 563.2 0 0 0-7.9 3.6c0 .4.5.5 1 .7l.3.1c.6.2 1.5.5 1.9.5.4 0 .8-.2 1.3-.5a123.2 123.2 0 0 1 5.3-3.3v.2a34 34 0 0 1-3.5 3.5c-.6.5-1 1 0 1.6l1.3.9a88.8 88.8 0 0 0 1.8 1.2c.5.4 1 .7 1.5.6.3 0 .6-.3.8-1.2a143 143 0 0 0 1.3-9.1l-.1-.3a.8.8 0 0 0-.5-.2c-.4 0-1.1.3-4.5 1.7Z" fill="#FCFCFC"/>
+                <rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href=" https://vk.com/htmlacademy" target="blank">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.4 3h-.7s-1.6 0-3-1.2A16.8 16.8 0 0 1 8 11.6v-.2l.4-.1h2l.1.2.7 1.2c.7 1 1 1.3 1.3 1.2.3-.2.2-1.5.2-1.5s0-.5-.2-.7c-.1-.2-.4-.3-.5-.3 0 0 0-.2.3-.3l1.5-.1h.8c.5.2.5.5.4 1.1V13c0 .4 0 .8.2 1 .2 0 .5 0 1.3-1.3l.7-1.2.1-.2h2.1l.6.1c0 .3-.2.8-1 1.6-.7.9-1 1.2-1 1.4 0 .2.3.4.7.7l1.2 1.2c.4.6-.4.7-.4.7h-1.7l-.7-.2a4 4 0 0 1-.7-.6c-.4-.4-.7-.7-1-.6-.4.1-.4 1-.4 1v.2l-.4.2Z" fill="#FCFCFC"/>
+                <rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <span class="visually-hidden">Youtube</span>
+            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="blank">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m16 13.8-2.8-1.3c-.2-.1-.4 0-.4.3v2.4c0 .3.2.4.4.3l2.8-1.3c.2-.1.2-.3 0-.4ZM14 2a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.9c-6.1 0-6.3-.6-6.3-4.9 0-4.3.2-4.9 6.3-4.9s6.3.6 6.3 4.9c0 4.3-.2 4.9-6.3 4.9Z" fill="#FCFCFC"/>
+                <rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__list about-us__list">
+          <li class="about-us__item">
+            <a class="about-us__link about-us__link--current" href="#">Для поставщиков</a>
+          </li>
+          <li class="about-us__item">
+            <a class="about-us__link" href="#">Наши документы</a>
+          </li>
+          <li class="about-us__item">
+            <a class="about-us__link" href="#">О производстве</a>
+          </li>
+          <li class="about-us__item">
+            <a class="about-us__link" href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+        <div class="footer__copyright copyright">
+          <svg class="copyright__icon" width="93" height="27" viewBox="0 0 93 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#a)" fill="#2D3440">
+              <path d="M0 10.4v2.1h2v-2H0ZM9.4 3.7c-1.2 0-2.3.5-2.9 1.4V0H4.7v12.5h1.6V8.2c0-1.7 1.1-3 2.7-3 1.5 0 2.3 1.2 2.3 2.7v4.6h1.7v-5c0-2.3-1.5-3.8-3.7-3.8ZM21.5 4h-3.9V.8H16v3h-1.6v1.6H16v4.8c0 1.4.8 2.2 2.2 2.2h3.3v-1.6h-3c-.6 0-.9-.3-.9-.9V5.5h4V3.9ZM33.3 3.7c-1.4 0-2.4.6-3 1.6a3 3 0 0 0-2.7-1.6c-1.1 0-2 .6-2.5 1.4V4h-1.6v8.6H25V8.1c0-1.6.8-2.8 2.1-2.8 1.2 0 2 .8 2 2.1v5.1h1.6V8c0-2 1.1-2.7 2.1-2.7 1.2 0 2 .8 2 2.1v5.1h1.6V7.2c0-2-1.2-3.5-3.2-3.5ZM38.7 10.3c0 1.4.8 2.2 2.2 2.2h1.7v-1.6h-1.4c-.6 0-.9-.3-.9-.8V0h-1.6v10.3ZM23.4 16a3.7 3.7 0 0 0-3.2-1.5c-2.5 0-4.3 1.8-4.3 4.5 0 2.6 1.8 4.5 4.3 4.5 1.4 0 2.5-.7 3.1-1.6v1.3H25v-8.5h-1.6v1.2Zm-3 5.9c-1.7 0-2.9-1.3-2.9-3 0-1.6 1.2-2.9 3-2.9 1.7 0 2.9 1.3 2.9 3 0 1.6-1.2 2.9-3 2.9ZM35.8 17.8c-.4-2-2.2-3.3-4.4-3.3-2.7 0-4.5 2-4.5 4.5s1.8 4.5 4.5 4.5c2.2 0 4-1.5 4.4-3.4H34c-.3 1-1.3 1.8-2.6 1.8-1.8 0-2.9-1.3-2.9-3 0-1.6 1.1-2.9 3-2.9 1.2 0 2.2.8 2.5 1.8h1.8ZM44.5 16a3.7 3.7 0 0 0-3-1.5c-2.6 0-4.5 1.8-4.5 4.5 0 2.6 1.9 4.5 4.4 4.5 1.4 0 2.4-.7 3-1.6h.1v1.3h1.7v-8.5h-1.7v1.2Zm-2.9 5.9c-1.8 0-3-1.3-3-3 0-1.6 1.2-2.9 3-2.9s3 1.3 3 3c0 1.6-1.2 2.9-3 2.9ZM55.5 16c-.7-.9-1.8-1.5-3.1-1.5-2.5 0-4.4 1.8-4.4 4.5 0 2.6 1.8 4.5 4.4 4.5 1.3 0 2.4-.6 3-1.5h.1v1.2h1.6V10.8h-1.6V16Zm-2.9 6c-1.8 0-3-1.4-3-3s1.2-3 3-3 2.9 1.4 2.9 3-1.1 3-2.9 3ZM63.3 14.5c-2.6 0-4.4 2-4.4 4.5 0 2.4 1.7 4.5 4.5 4.5 2 0 3.6-1.1 4.2-3h-1.7c-.4.9-1.3 1.4-2.5 1.4-1.5 0-2.6-1-2.7-2.4h7c.3-2.8-1.5-5-4.4-5Zm0 1.5c1.4 0 2.4.9 2.7 2h-5.3c.2-1.1 1.3-2 2.6-2ZM79.4 14.5c-1.3 0-2.3.6-2.9 1.6a3 3 0 0 0-2.7-1.6 3 3 0 0 0-2.6 1.4v-1.2h-1.6v8.5h1.6V19c0-1.7.9-2.8 2.2-2.9 1.2 0 1.9.9 1.9 2.2v5h1.6v-4.5c0-1.9 1.2-2.7 2.2-2.7 1.2 0 1.9.9 1.9 2.2v5h1.6V18c0-2-1.2-3.5-3.2-3.5ZM88.5 21.9l-3-7.2h-1.8l4 9.3c-.3.8-.6 1-1.4 1h-2v1.7h2c1.5 0 2.3-.7 2.8-2.1l3.8-10h-1.7L88.5 22Z"/>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h93v26.7H0z"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="copyright__text">Сделано в .html academy © 2021</span>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

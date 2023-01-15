@@ -1,0 +1,21 @@
+.form-search__label {
+  position: relative;
+}
+
+.form-search__field:placeholder-shown + .form-search__button {
+  display: none;
+}
+
+.form-search__button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url("../../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: (50% 50%);
+  border: none;
+  transform: translateY(-50%);
+}
