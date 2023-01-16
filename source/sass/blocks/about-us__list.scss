@@ -17,6 +17,18 @@
   text-decoration: none;
   color: $secondary-black;
 
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $secondary-black;
+  }
+
   &--current {
     position: relative;
     font-weight: 700;

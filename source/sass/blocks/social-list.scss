@@ -10,7 +10,31 @@
 .social-list__link {
   display: inline-block;
 
-  &:hover {
-    
+  &:hover .social-list__icon-circle {
+    fill: $secondary-black;
+  }
+
+  &:hover .social-list__icon-rect {
+    stroke-opacity: 0.5;
+  }
+
+  &:active .social-list__icon-circle {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible .social-list__icon-circle {
+    fill: $secondary-black;
+    r: 13;
+    stroke: $secondary-black;
+    stroke-width: 2;
+  }
+
+  &:focus-visible .social-list__icon-rect {
+    stroke: $secondary-black;
+    stroke-opacity: 1;
   }
 }
