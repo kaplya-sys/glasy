@@ -1,12 +1,16 @@
 .social-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 144px;
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  column-gap: 16px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.social-list__item {
-  margin-right: 16px;
+.social-list__link {
+  display: inline-block;
+
+  &:hover {
+    
+  }
 }
