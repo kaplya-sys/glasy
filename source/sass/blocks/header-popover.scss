@@ -1,8 +1,10 @@
+@use "global/variables";
+
 .header-popover {
   display: none;
   flex-wrap: wrap;
   padding: 48px;
-  background-color: $secondary-white;
+  background-color: variables.$primary-light-color;
   border-radius: 4px;
 
   &:hover {
@@ -63,9 +65,9 @@
   display: inline-block;
   margin-right: 32px;
   text-decoration: none;
-  color: $secondary-white;
-  background-color: $extra-bright;
-  border: 4px solid rgba($extra-bright, 0.3);
+  color: variables.$primary-light-color;
+  background-color: variables.$extra-bright;
+  border: 4px solid rgba(variables.$extra-bright, 0.3);
 }
 
 .header-popover__total {

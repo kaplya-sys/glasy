@@ -1,3 +1,5 @@
+@use "global/variables";
+
 .site-list__item--logo {
   margin-right: 16px;
 }
@@ -8,11 +10,11 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: $primary-black;
+  color: variables.$primary-dark-color;
 
   &:hover {
-    color: $secondary-white;
-    background-color: $bright;
+    color: variables.$primary-light-color;
+    background-color: variables.$bright;
     border-radius: 30px;
   }
 }

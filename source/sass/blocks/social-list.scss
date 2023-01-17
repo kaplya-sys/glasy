@@ -1,17 +1,16 @@
+@use "global/variables";
+
 .social-list {
   display: grid;
   grid-template-columns: repeat(3, 24px);
   column-gap: 16px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
 .social-list__link {
   display: inline-block;
 
   &:hover .social-list__icon-circle {
-    fill: $secondary-black;
+    fill: variables.$primary-dark-color;
   }
 
   &:hover .social-list__icon-rect {
@@ -27,14 +26,14 @@
   }
 
   &:focus-visible .social-list__icon-circle {
-    fill: $secondary-black;
+    fill: variables.$primary-dark-color;
     r: 13;
-    stroke: $secondary-black;
+    stroke: variables.$primary-dark-color;
     stroke-width: 2;
   }
 
   &:focus-visible .social-list__icon-rect {
-    stroke: $secondary-black;
+    stroke: variables.$primary-dark-color;
     stroke-opacity: 1;
   }
 }

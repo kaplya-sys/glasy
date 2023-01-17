@@ -1,3 +1,5 @@
+@use "global/variables";
+
 .user-list__item {
   position: relative;
   margin-right: 16px;
@@ -12,7 +14,7 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: $primary-black;
+  color: variables.$primary-dark-color;
 }
 
 .user-list__popover {
@@ -28,17 +30,17 @@
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  color: $primary-black;
+  color: variables.$primary-dark-color;
   border-radius: 30px;
-  background-color: $extra-light;
+  background-color: variables.$extra-light;
 
   &:hover {
-    color: $secondary-white;
-    background-color: $bright;
+    color: variables.$primary-light-color;
+    background-color: variables.$bright;
   }
 
   &:hover .user-list__icon-path {
-    fill: $secondary-white;
+    fill: variables.$primary-light-color;
   }
 
   &:hover + .header-popover {

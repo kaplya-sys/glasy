@@ -1,3 +1,5 @@
+@use "global/variables";
+
 .header-select {
   position: relative;
 
@@ -21,8 +23,8 @@
 
   &:hover,
   &:focus {
-    color: $secondary-white;
-    background-color: $bright;
+    color: variables.$primary-light-color;
+    background-color: variables.$bright;
     border-radius: 30px;
   }
 
@@ -31,7 +33,7 @@
   }
 
   &:hover .header-select__icon-path {
-    fill: $secondary-white;
+    fill: variables.$primary-light-color;
   }
 }
 
@@ -47,7 +49,7 @@
   font-size: 14px;
   line-height: 20px;
   list-style: none;
-  background-color: $secondary-white;
+  background-color: variables.$primary-light-color;
   border-radius: 4px;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 
@@ -69,16 +71,16 @@
   padding: 6px 13px 6px 16px;
 
   &:hover {
-    background-color: $extra-light;
+    background-color: variables.$extra-light;
   }
 
   &:focus-within {
-    background-color: $neutral;
+    background-color: variables.$neutral;
   }
 
   &:active .header-select__link {
-    background-color: $bright;
-    color: $secondary-white;
+    background-color: variables.$bright;
+    color: variables.$primary-light-color;
   }
 
   &--current {
@@ -96,7 +98,7 @@
       margin: 0 auto;
       width: calc(100% - 32px);
       height: 1px;
-      background-color: $border;
+      background-color: variables.$border;
       content: "";
     }
   }
@@ -104,7 +106,7 @@
 
 .header-select__link {
   text-decoration: none;
-  color: $primary-black;
+  color: variables.$primary-dark-color;
 
   &:focus {
     outline: none;
