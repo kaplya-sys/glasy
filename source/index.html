@@ -66,13 +66,13 @@
             </a>
             <div class="user-list__popover header-popover header-popover--search">
               <form class="header-popover__form form-search" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="form-search__label label">
+                <label class="form-search__label label" for="search">
                   <span class="visually-hidden">Введите запрос</span>
-                  <input class="form-search__field field" type="text" id="search" placeholder="Поиск по сайту">
-                  <button class="form-search__button" type="button">
-                    <span class="visually-hidden">Очистить</span>
-                  </button>
                 </label>
+                <input class="form-search__field field" type="text" id="search" placeholder="Поиск по сайту">
+                <button class="form-search__button" type="button">
+                  <span class="visually-hidden">Очистить</span>
+                </button>
               </form>
             </div>
           </li>
@@ -150,7 +150,17 @@
   </header>
   <main class="body__main main body-theme--theme-1">
     <div class="container">
-
+      <h1 class="visually-hiden">Интернет магазин «Глейси»</h1>
+      <section class="slider">
+        <h2 class="slider__title">Мороженое</h2>
+        <ul class="slider__list">
+          <li class="slider__item">
+            <div class="slider__product-wrapper">
+              <h3 class="product__title">Нежный пломбир с клубничным джемом</h3>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
   </main>
   <footer class="body__footer footer body-theme--theme-1">
