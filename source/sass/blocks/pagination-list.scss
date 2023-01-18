@@ -1,0 +1,25 @@
+@use "global/variables";
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pagination-list__item:not(:last-child) {
+  padding-right: 8px;
+}
+
+.pagination-list__button {
+  width: 12px;
+  height: 12px;
+  background-color: variables.$primaryLightColor;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &--current {
+    opacity: 1;
+  }
+}

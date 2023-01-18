@@ -14,8 +14,8 @@
 
 .slider__button {
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 44%;
+  left: 73%;
   width: 38px;
   height: 38px;
   background-color: transparent;
@@ -26,7 +26,8 @@
   border-radius: 50%;
 
   &--prev {
-    transform: rotate(180deg);
+    left: 46%;
+    transform: rotate(180deg) translateX(-10%);
   }
 }
 

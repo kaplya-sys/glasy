@@ -7,6 +7,10 @@
   &:focus-within .header-popover {
     display: flex;
   }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .user-list__contact-phone {

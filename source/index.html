@@ -158,7 +158,7 @@
             <div class="product-list__product-wrapper">
               <h3 class="product-list__title">Нежный пломбир<br>с клубничным джемом</h3>
               <p class="product-list__description">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-              <a class="product-list__button button" href="#">Заказать</a>
+              <button class="product-list__button button" type="button">Заказать</button>
             </div>
             <div class="product-list__image-wrapper">
               <img class="product-list__image" src="./images/ice_cream.png" width="100" height="150" alt="Клубничный пломбир с джемом.">
@@ -193,13 +193,21 @@
         </button>
         <div class="slider__bottom-elements-wrapper">
           <ol class="slider__list pagination-list">
-            <li class="pagination-list__item">1</li>
-          </ol>
-          <ol class="slider__list pagination-list">
-            <li class="pagination-list__item">2</li>
-          </ol>
-          <ol class="slider__list pagination-list">
-            <li class="pagination-list__item">3</li>
+            <li class="pagination-list__item">
+              <button class="pagination-list__button pagination-list__button--current" type="button">
+                <span class="visually-hidden">1 слайд</span>
+              </button>
+            </li>
+            <li class="pagination-list__item">
+              <button class="pagination-list__button" type="button">
+                <span class="visually-hidden">2 слайд</span>
+              </button>
+            </li>
+            <li class="pagination-list__item">
+              <button class="pagination-list__button" type="button">
+                <span class="visually-hidden">3 слайд</span>
+              </button>
+            </li>
           </ol>
           <ul class="slider__list social-list">
             <li class="social-list__item">
