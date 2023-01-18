@@ -14,7 +14,7 @@
 
 .copyright__link,
 .copyright__text-link {
-  color: variables.$primary-dark-color;
+  color: variables.$primaryDarkColor;
   text-underline-offset: 3px;
 
   &:hover {
@@ -26,7 +26,7 @@
   }
 
   &:focus-visible {
-    outline: 2px solid variables.$primary-dark-color;
+    outline: 2px solid variables.$primaryDarkColor;
   }
 }
 

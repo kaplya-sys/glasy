@@ -14,7 +14,7 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: variables.$primary-dark-color;
+  color: variables.$primaryDarkColor;
 }
 
 .user-list__popover {
@@ -30,17 +30,17 @@
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  color: variables.$primary-dark-color;
+  color: variables.$primaryDarkColor;
   border-radius: 30px;
-  background-color: variables.$extra-light;
+  background-color: variables.$extraLight;
 
   &:hover {
-    color: variables.$primary-light-color;
+    color: variables.$primaryLightColor;
     background-color: variables.$bright;
   }
 
   &:hover .user-list__icon-path {
-    fill: variables.$primary-light-color;
+    fill: variables.$primaryLightColor;
   }
 
   &:hover + .header-popover {

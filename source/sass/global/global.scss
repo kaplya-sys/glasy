@@ -1,3 +1,5 @@
+@use "global/variables";
+
 *,
 *::before,
 *::after {
@@ -17,6 +19,6 @@
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: variables.$contentWide;
   margin: 0 auto;
 }

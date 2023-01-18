@@ -23,7 +23,7 @@
 
   &:hover,
   &:focus {
-    color: variables.$primary-light-color;
+    color: variables.$primaryLightColor;
     background-color: variables.$bright;
     border-radius: 30px;
   }
@@ -33,7 +33,7 @@
   }
 
   &:hover .header-select__icon-path {
-    fill: variables.$primary-light-color;
+    fill: variables.$primaryLightColor;
   }
 }
 
@@ -49,7 +49,7 @@
   font-size: 14px;
   line-height: 20px;
   list-style: none;
-  background-color: variables.$primary-light-color;
+  background-color: variables.$primaryLightColor;
   border-radius: 4px;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
 
@@ -71,7 +71,7 @@
   padding: 6px 13px 6px 16px;
 
   &:hover {
-    background-color: variables.$extra-light;
+    background-color: variables.$extraLight;
   }
 
   &:focus-within {
@@ -80,7 +80,7 @@
 
   &:active .header-select__link {
     background-color: variables.$bright;
-    color: variables.$primary-light-color;
+    color: variables.$primaryLightColor;
   }
 
   &--current {
@@ -106,7 +106,7 @@
 
 .header-select__link {
   text-decoration: none;
-  color: variables.$primary-dark-color;
+  color: variables.$primaryDarkColor;
 
   &:focus {
     outline: none;

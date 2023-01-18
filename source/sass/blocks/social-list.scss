@@ -2,7 +2,7 @@
 
 .social-list {
   display: grid;
-  grid-template-columns: repeat(3, 24px);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
 }
 
@@ -10,7 +10,7 @@
   display: inline-block;
 
   &:hover .social-list__icon-circle {
-    fill: variables.$primary-dark-color;
+    fill: variables.$primaryDarkColor;
   }
 
   &:hover .social-list__icon-rect {
@@ -26,14 +26,14 @@
   }
 
   &:focus-visible .social-list__icon-circle {
-    fill: variables.$primary-dark-color;
+    fill: variables.$primaryDarkColor;
     r: 13;
-    stroke: variables.$primary-dark-color;
+    stroke: variables.$primaryDarkColor;
     stroke-width: 2;
   }
 
   &:focus-visible .social-list__icon-rect {
-    stroke: variables.$primary-dark-color;
+    stroke: variables.$primaryDarkColor;
     stroke-opacity: 1;
   }
 }

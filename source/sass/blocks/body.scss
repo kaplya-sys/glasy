@@ -3,36 +3,36 @@
 .body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  color: variables.$primary-dark-color;
-  background-color: variables.$secondary-light-color;
+  color: variables.$primaryDarkColor;
+  background-color: variables.$secondaryLightColor;
 }
 
 .body__header {
-  width: 1366px;
+  width: variables.$pageWide;
   margin: 0 auto;
 }
 
 .body__main {
   flex-grow: 1;
-  width: 1366px;
+  width: variables.$pageWide;
   margin: 0 auto;
 }
 
 .body__footer {
-  width: 1366px;
+  width: variables.$pageWide;
   margin: 0 auto;
 }
 
 .body-theme {
   &--theme-1 {
-    background-color: variables.$background-1;
+    background-color: variables.$background_1;
   }
 
   &--theme-2 {
-    background-color: variables.$background-2;
+    background-color: variables.$background_2;
   }
 
   &--theme-3 {
-    background-color: variables.$background-3;
+    background-color: variables.$background_3;
   }
 }
