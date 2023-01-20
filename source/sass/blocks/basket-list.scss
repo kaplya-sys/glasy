@@ -23,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   min-width: 345px;
   margin-bottom: 24px;
 
@@ -37,8 +38,7 @@
 }
 
 .basket-list__purchase-info-wrapper {
-  width: 130px;
-  margin-right: 35px;
+  width: 170px;
 }
 
 .basket-list__title {
@@ -56,7 +56,7 @@
 }
 
 .basket-list__price {
-  margin-right: 52px;
+  margin-right: auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -70,4 +70,5 @@
   background-repeat: no-repeat;
   background-position: (50% 50%);
   border: none;
+  cursor: pointer;
 }

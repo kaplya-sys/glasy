@@ -1,15 +1,15 @@
 @use "global/variables";
 
-.about-us-list {
+.customers-list {
   display: grid;
   grid-template-columns: 1fr auto;
 }
 
-.about-us-list__item {
+.customers-list__item {
   margin-right: 24px;
 }
 
-.about-us-list__link {
+.customers-list__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

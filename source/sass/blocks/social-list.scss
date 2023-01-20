@@ -27,7 +27,6 @@
 
   &:focus-visible .social-list__icon-circle {
     fill: variables.$primaryDarkColor;
-    r: 13;
     stroke: variables.$primaryDarkColor;
     stroke-width: 2;
   }

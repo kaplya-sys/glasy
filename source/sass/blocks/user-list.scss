@@ -5,7 +5,7 @@
   margin-right: 16px;
 
   &:focus-within .header-popover {
-    display: flex;
+    display: block;
   }
 
   &:last-child {
@@ -48,7 +48,7 @@
   }
 
   &:hover + .header-popover {
-    display: flex;
+    display: block;
   }
 
   &::after {

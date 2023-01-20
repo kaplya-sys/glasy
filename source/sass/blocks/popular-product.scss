@@ -1,0 +1,24 @@
+.popular-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular-product__tittle {
+  margin: 0;
+  width: 530px;
+  margin-bottom: 107px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.popular-product__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

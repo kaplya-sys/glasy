@@ -52,6 +52,7 @@
   background-color: variables.$primaryLightColor;
   border-radius: 4px;
   box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  z-index: 1;
 
   &:hover {
     display: block;

@@ -1,0 +1,56 @@
+@use "global/variables";
+
+.about-us {
+  position: relative;
+  padding: 24px 24px;
+  background-color: tomato;
+  border-radius: 16px;
+}
+
+.about-us__container {
+  padding: 56px 40px;
+  background-color: variables.$secondaryLightColor;
+  border-radius: 16px;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 56px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.about-us__description-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  row-gap: 40px;
+}
+
+.about-us__description {
+  margin: 0;
+  padding-left: 64px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: variables.$secondaryDarkColor;
+  background-repeat: no-repeat;
+
+  &--ice_lolly {
+    background-image: url("../../images/ice_lolly.svg");
+  }
+
+  &--cow {
+    background-image: url("../../images/cow.svg");
+  }
+
+  &--sheet {
+    background-image: url("../../images/sheet.svg");
+  }
+
+  &--thermometer {
+    background-image: url("../../images/thermometer.svg");
+  }
+}

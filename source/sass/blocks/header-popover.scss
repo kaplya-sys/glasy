@@ -6,9 +6,10 @@
   padding: 48px;
   background-color: variables.$primaryLightColor;
   border-radius: 4px;
+  z-index: 2;
 
   &:hover {
-    display: flex;
+    display: block;
   }
 
   &--search {
@@ -63,7 +64,7 @@
 
 .header-popover__button {
   display: inline-block;
-  margin-right: 32px;
+  margin-right: 19px;
   text-decoration: none;
   color: variables.$primaryLightColor;
   background-color: variables.$extraBright;
