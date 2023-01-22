@@ -27,28 +27,33 @@
   right: 0;
 }
 
-.user-list__link {
+.user-list__button {
   display: flex;
+  align-items: center;
   padding: 6px 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  text-decoration: none;
-  color: variables.$primaryDarkColor;
+  border: none;
   border-radius: 30px;
-  background-color: variables.$extraLight;
+  background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.3);
 
   &:hover {
-    color: variables.$primaryLightColor;
-    background-color: variables.$bright;
+    background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.5);
   }
 
-  &:hover .user-list__icon-path {
-    fill: variables.$primaryLightColor;
+  &:focus {
+    outline: none;
   }
 
-  &:hover + .header-popover {
-    display: block;
+  &:focus-visible {
+    padding: 4px 14px;
+    background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.5);
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    background-color: variables.$primaryLightColor;
   }
 
   &::after {
@@ -60,9 +65,29 @@
     content: "";
   }
 
+  &--current + .header-popover {
+    display: block;
+  }
+
+  &--current {
+    color: variables.$primaryLightColor;
+    background-color: variables.$bright;
+  }
+
+  &--current .user-list__icon-path {
+    fill: variables.$primaryLightColor;
+  }
+
   &--search {
     padding: 8px;
-    padding-right: 2px;
+
+    &:focus-visible {
+      padding: 6px;
+    }
+  }
+
+  &--search .user-list__icon {
+    margin: 0;
   }
 }
 

@@ -7,16 +7,17 @@ const bodyHeader = document.querySelector('.body__header');
 const bodyMain = document.querySelector('.body__main');
 const bodyFooter = document.querySelector('.body__footer');
 const paginationButtons = document.querySelectorAll('.pagination-list__button');
+const userNavButtons = document.querySelectorAll('.user-list__button');
 
 let counter = 1;
 
 const nextSlider = () => {
-  showSlider(counter += 1)
-}
+  showSlider(counter += 1);
+};
 
 const prevSlider = () => {
-  showSlider(counter -= 1)
-}
+  showSlider(counter -= 1);
+};
 
 const showSlider = (position) => {
   const fragment =  /\body-theme--theme-[^ ]/;
@@ -36,16 +37,23 @@ const showSlider = (position) => {
   bodyHeader.setAttribute('class', 'body__header header body-theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
   bodyMain.setAttribute('class', 'body__main main-index body-theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
   bodyFooter.setAttribute('class', 'body__footer footer body-theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
-}
+};
 
 clearButton.addEventListener('click', () => {
-  searchField.value = ''
+  searchField.value = '';
 });
 
 prevButton.addEventListener('click', () => {
-  prevSlider()
+  prevSlider();
 });
 
 nextButton.addEventListener('click', () => {
-  nextSlider()
+  nextSlider();
 });
+
+for (let i = 0; i < userNavButtons.length; i++) {
+  userNavButtons[i].addEventListener('click', () => {
+    userNavButtons[i].classList.toggle('user-list__button--current');
+    console.log(userNavButtons)
+  });
+}

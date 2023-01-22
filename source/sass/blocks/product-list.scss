@@ -9,10 +9,6 @@
   align-items: center;
   margin-right: 41px;
 
-  &:last-of-type {
-    margin-right: 0;
-  }
-
   &--current {
     margin-right: 62px;
     padding-left: 70px;
@@ -57,6 +53,7 @@
 .product-list__product-wrapper {
   display: none;
   width: 432px;
+  min-height: 295px;
   margin-right: 62px;
   padding-top: 7px;
 }

@@ -6,7 +6,111 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  background-color: variables.$primaryLightColor;
+  border: 4px solid rgba(variables.$primaryLightColor, 0.4);
   border-radius: 26px;
-  box-shadow: 0 4px 12px rgba(variables.$shadow, 0.1);
+  box-shadow: 0 4px 12px rgba(variables.$primaryShadow, 0.1);
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(variables.$primaryLightColor, 0.4);
+    border: 4px solid variables.$primaryLightColor;
+    box-shadow: 0 4px 15px rgba(variables.$secondaryShadow, 0.15);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: rgba(variables.$primaryLightColor, 0.5);
+    border: 2px solid variables.$primaryDarkColor;
+  }
+
+  &:active {
+    background-color: variables.$primaryLightColor;
+    border: 2px solid variables.$primaryDarkColor;
+  }
+
+  &:disabled {
+    color: variables.$border;
+    background-color: variables.$dividingLine;
+    border: 4px solid rgba(variables.$primaryLightColor, 0.4);
+  }
+
+  &--bright {
+    color: variables.$primaryLightColor;
+    background-color: variables.$extraBright;
+    border: 4px solid rgba(variables.$extraBright, 0.3);
+
+    &:hover {
+      color: variables.$primaryDarkColor;
+      background-color: rgba(variables.$primaryLightColor, 0.3);
+      border: 4px solid variables.$extraBright;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      background-color: variables.$extraBright;
+    }
+
+    &:active {
+      background-color: variables.$background_1;
+    }
+
+    &:disabled {
+      color: variables.$secondaryDarkColor;
+      background-color: variables.$border;
+      border: 4px solid rgba(variables.$border, 0.3);
+    }
+  }
+
+  &--loading {
+    position: relative;
+    padding-right: 56px;
+
+    &::after {
+      position: absolute;
+      top: 35%;
+      right: 20%;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(variables.$tertiaryDarkColor, 0.24);
+      border-bottom-color: variables.$tertiaryDarkColor;
+      border-radius: 50%;
+      animation: rotation 1s linear infinite;
+      content: "";
+    }
+  }
+
+  &--bright--loading {
+    position: relative;
+    padding-right: 56px;
+
+    &::after {
+      position: absolute;
+      top: 35%;
+      right: 20%;
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(variables.$primaryLightColor, 0.25);
+      border-bottom-color: variables.$primaryLightColor;
+      border-radius: 50%;
+      animation: rotation 1s linear infinite;
+      content: "";
+    }
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

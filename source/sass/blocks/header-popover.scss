@@ -6,11 +6,7 @@
   padding: 48px;
   background-color: variables.$primaryLightColor;
   border-radius: 4px;
-  z-index: 2;
-
-  &:hover {
-    display: block;
-  }
+  z-index: 3;
 
   &--search {
     padding: 24px 16px;

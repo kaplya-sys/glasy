@@ -24,6 +24,7 @@
 
 .promotions__title {
   margin: 0;
+  margin-bottom: 55px;
   width: 435px;
   font-weight: 900;
   font-size: 32px;
@@ -37,7 +38,13 @@
 
 .promotion__description {
   margin: 0;
+  margin-bottom: 28px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+.promotion__button {
+  color: variables.$primaryDarkColor;
+  text-decoration: none;
 }
