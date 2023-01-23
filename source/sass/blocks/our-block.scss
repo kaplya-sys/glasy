@@ -1,6 +1,28 @@
+@use "global/variables";
+
 .our-block {
   width: 570px;
-  height: 224px;
-  background: repeating-linear-gradient(-45deg, #edf0f5 22px, #68a8ff 22px, #68a8ff 33px, #edf0f5 33px, #edf0f5 55px, #ff2e65 55px, #ff2e65 66px, #edf0f5 66px, #edf0f5 88px, #68a8ff 88px);
+  padding: 32px 235px 67px 32px;
+  background-image: url("../../images/news.jpg");
+  background-repeat: no-repeat;
   border-radius: 16px;
+}
+
+.our-block__text {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: variables.$secondaryDarkColor;
+}
+
+.our-block__link {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  color: variables.$primaryDarkColor;
 }

@@ -22,28 +22,28 @@
             </a>
           </li>
           <li class="site-list__item">
-            <div class="site-list__select header-select">
-              <button class="header-select__button" type="button">
-                <svg class="header-select__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="header-select__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
+            <div class="site-list__select select">
+              <button class="select__button" type="button">
+                <svg class="select__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="select__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
                 </svg>
                 Каталог
               </button>
-              <ul class="header-select__list">
-                <li class="header-select__item header-select__item--current">
-                  <a class="header-select__link" href="#">Новинки</a>
+              <ul class="select__list">
+                <li class="select__item select__item--current">
+                  <a class="select__link" href="#">Новинки</a>
                 </li>
-                <li class="header-select__item">
-                  <a class="header-select__link" href="#">Сливочное</a>
+                <li class="select__item">
+                  <a class="select__link" href="#">Сливочное</a>
                 </li>
-                <li class="header-select__item">
-                  <a class="header-select__link" href="#">Щербеты</a>
+                <li class="select__item">
+                  <a class="select__link" href="#">Щербеты</a>
                 </li>
-                <li class="header-select__item">
-                  <a class="header-select__link" href="#">Фруктовый лед</a>
+                <li class="select__item">
+                  <a class="select__link" href="#">Фруктовый лед</a>
                 </li>
-                <li class="header-select__item">
-                  <a class="header-select__link" href="#">Мелорин</a>
+                <li class="select__item">
+                  <a class="select__link" href="#">Мелорин</a>
                 </li>
               </ul>
             </div>
@@ -66,8 +66,8 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </button>
-            <div class="user-list__popover header-popover header-popover--search">
-              <form class="header-popover__form form-search" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="user-list__popover popover popover--search">
+              <form class="popover__form form-search" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="form-search__label label" for="search">
                   <span class="visually-hidden">Введите запрос</span>
                 </label>
@@ -86,10 +86,11 @@
               </svg>
               Вход
             </button>
-            <div class="user-list__popover header-popover header-popover--login">
-              <h2 class="header-popover__title">Личный кабинет</h2>
-              <form class="header-popover__form form-login" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="form-login__label label" for="email">
+            <!--popover--show-->
+            <div class="user-list__popover popover popover--login">
+              <h2 class="popover__title">Личный кабинет</h2>
+              <form class="popover__form form-login" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="form-login__label" for="email">
                   <span class="visually-hidden">Электронная почта</span>
                   <input class="form-login__field field" type="email" id="email" placeholder="email@example.com">
                 </label>
@@ -114,12 +115,13 @@
               <span class="visually-hidden">Корзина</span>
               <span class="user-list__count-product">2 товара</span>
             </button>
-            <!--header-popover--basket-->
-            <div class="user-list__popover header-popover">
-              <p class="header-popover__basket-text">Ваша корзина пока пуста</p>
-              <div class="header-popover__popover-wrapper">
-                <h2 class="header-popover__title">Корзина</h2>
-                <ul class="header-popover__list basket-list">
+            <!--popover--basket--empty-->
+            <div class="user-list__popover popover popover--basket">
+              <!--popover__basket-text--hide-text-->
+              <p class="popover__basket-text">Ваша корзина пока пуста</p>
+              <div class="popover__popover-wrapper">
+                <h2 class="popover__title">Корзина</h2>
+                <ul class="popover__list basket-list">
                   <li class="basket-list__item">
                     <img class="basket-list__image" src="images/ice_cream_ball.png" width="46" height="46" alt="Мороженое «Малинка».">
                     <div class="basket-list__purchase-info-wrapper">
@@ -143,8 +145,8 @@
                     </button>
                   </li>
                 </ul>
-                <a class="header-popover__button button button--bright" href="#">Оформить заказ</a>
-                <span class="header-popover__total">Итого: 790 ₽</span>
+                <a class="popover__button button button--bright" href="#">Оформить заказ</a>
+                <span class="popover__total">Итого: 790 ₽</span>
               </div>
             </div>
           </li>
@@ -272,10 +274,10 @@
           </li>
         </ul>
       </section>
-      <section class="main-index__popular-product popular-product">
-        <h2 class="popular-product__tittle">Попробуйте самые популярные вкусы нашего мороженого</h2>
-        <ul class="popular-product__list">
-          <li class="popular-product__item catalog-item">
+      <section class="main-index__popular-product popular-products">
+        <h2 class="popular-products__tittle">Попробуйте самые популярные вкусы нашего мороженого</h2>
+        <ul class="popular-products__list">
+          <li class="popular-products__item catalog-item">
             <h3 class="catalog-item__title">Малинка</h3>
             <img class="catalog-item__image" src="./images/ice_cream_ball.png" width="168" height="168" alt="Шарик малинового мороженого.">
             <p class="catalog-item__description">Сливочное мороженое с малиновым джемом</p>
@@ -289,7 +291,7 @@
               </button>
             </div>
           </li>
-          <li class="popular-product__item catalog-item">
+          <li class="popular-products__item catalog-item">
             <h3 class="catalog-item__title">Фисташка</h3>
             <img class="catalog-item__image" src="./images/ice_cream_ball_1.png" width="168" height="168" alt="Шарик фисташкового мороженого.">
             <p class="catalog-item__description">Фисташковый пломбир с кусочками шоколада</p>
@@ -303,7 +305,7 @@
               </button>
             </div>
           </li>
-          <li class="popular-product__item catalog-item">
+          <li class="popular-products__item catalog-item">
             <h3 class="catalog-item__title">Черника</h3>
             <img class="catalog-item__image" src="./images/ice_cream_ball_2.png" width="168" height="168" alt="Шарик черничного мороженого.">
             <p class="catalog-item__description">Крем-брюле<br>с черничным джемом</p>
@@ -317,7 +319,7 @@
               </button>
             </div>
           </li>
-          <li class="popular-product__item catalog-item">
+          <li class="popular-products__item catalog-item">
             <h3 class="catalog-item__title">Бабл-гам</h3>
             <img class="catalog-item__image" src="./images/ice_cream_ball_3.png" width="168" height="168" alt="Шарик мороженого Бабл-гам.">
             <p class="catalog-item__description">Ванильный пломбир<br>со сладкой посыпкой</p>
@@ -344,23 +346,26 @@
           </div>
         </div>
       </section>
-      <div class="main-index__">
+      <div class="main-index__blocks-wrapper">
         <section class="our-block">
-          <h2 class="our-block__title">Наш блог</h2>
+          <h2 class="visually-hidden">Наш блог</h2>
           <span class="our-block__text">Новое в нашем блоге</span>
-          <a class="our-block__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <a class="our-block__link" href="#">10 способов сервировки фруктовых щербетов<br>к столу</a>
         </section>
         <section class="subscribe">
-          <h2 class="visually-hidden">Новости и акции</h2>
-          <p class="subscribe__description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="subscribe__form-label">
-              <span class="visually-hidden">Электронная почта</span>
-              <input class="subscribe__form-field" type="email" placeholder="email@example.com">
-            </label>
-            <!--button--bright--loading-->
-            <button class="subscribe__form-button button button--bright" type="submit">Отправить</button>
-          </form>
+          <div class="subscribe__container">
+            <h2 class="visually-hidden">Новости и акции</h2>
+            <p class="subscribe__description">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="subscribe__form-label">
+                <span class="visually-hidden">Электронная почта</span>
+                <!--field--error-->
+                <input class="subscribe__form-field field" type="email" placeholder="email@example.com">
+              </label>
+              <!--button--bright--loading-->
+              <button class="subscribe__form-button button button--bright" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
       <section class="main-index__delivery delivery">
@@ -369,21 +374,40 @@
           <p class="delivery__description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         </div>
         <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="delivery__form-label">
-            Дата
-            <input class="delivery__form-field" type="text" placeholder="01.04.2020">
-          </label>
-          <label class="delivery__form-label">
-            Телефон
-            <input class="delivery__form-field" type="tel" placeholder="+7 800 999-00-00">
-          </label>
-          <label class="delivery__form-label">
-            Адрес
-            <input class="delivery__form-field" type="text" placeholder="ул. Большая Конюшенная, 19/8">
-          </label>
+          <span class="delivery__form-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</span>
+          <div class="delivery__form-field-group delivery__form-field-group--date">
+            <div class="">
+              <label class="delivery__form-label" for="date-field">Дата</label>
+            </div>
+            <input class="delivery__form-field field" type="text" id="date-field" placeholder="01.04.2020">
+          </div>
+          <div class="delivery__form-field-group delivery__form-field-group--telephone">
+            <label class="delivery__form-label" for="telephone-field">Телефон</label>
+            <input class="delivery__form-field field" type="tel" id="telephone-field" placeholder="+7 800 999-00-00">
+          </div>
+          <div class="delivery__form-field-group delivery__form-field-group--address">
+            <div class="delivery__form-label-wrapper">
+              <label class="delivery__form-label" for="address-field">Адрес</label>
+              <div class="delivery__tooltip tooltip">
+                <span class="tooltip__text">Введите название улицы, дома и квартиры</span>
+              </div>
+            </div>
+            <input class="delivery__form-field field" type="text" id="address-field" placeholder="ул. Большая Конюшенная, 19/8">
+          </div>
           <!--button--bright--loading-->
           <button class="delivery__form-button button button--bright" type="submit">Отправить</button>
         </form>
+      </section>
+      <section class="main-index__contacts contacts">
+        <div class="contacts__container">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <span class="contacts__text">Адрес главного офиса<br>и офлайн-магазина:</span>
+          <address class="contacts__address">наб. реки Карповки,<br>5 лит П, Санкт-Петербург</address>
+          <span class="contacts__text">Для заказов по телефону:</span>
+          <a class="contacts__phone"  href="tel:88005558628">+7 (812) 812-12-12</a>
+          <span class="contacts__text contacts__text--additional">(с 10 до 20 ежедневно)</span>
+          <a class="contacts__button button button--bright" href="#">Форма обратной связи</a>
+        </div>
       </section>
     </div>
   </main>

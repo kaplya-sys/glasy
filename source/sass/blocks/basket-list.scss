@@ -2,7 +2,9 @@
 
 .basket-list {
   position: relative;
+  min-width: 345px;
   margin: 0;
+  margin-bottom: 64px;
   padding: 0;
   list-style-type: none;
 
@@ -26,10 +28,6 @@
   justify-content: space-between;
   min-width: 345px;
   margin-bottom: 24px;
-
-  &:last-child {
-    margin-bottom: 64px;
-  }
 }
 
 .basket-list__image {

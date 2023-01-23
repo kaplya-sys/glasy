@@ -1,0 +1,51 @@
+@use "global/variables";
+
+.tooltip {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background-image: url("../../images/tooltip.svg");
+  background-repeat: no-repeat;
+  background-position: (50%, 50%);
+
+  border: 1px solid variables.$border;
+  box-shadow: 0 4px 8px rgba(variables.$tertiaryShadow, 0.2);
+
+  &::before {
+    position: absolute;
+    top: 19%;
+    left: -8px;
+    width: 14px;
+    height: 14px;
+    background-color: variables.$secondaryLightColor;
+    border-top: 1px solid variables.$border;
+    border-left: 1px solid variables.$border;
+    box-shadow: 0 4px 8px rgba(variables.$tertiaryShadow, 0.2);
+    transform: rotate(-45deg);
+    z-index: 1;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    width: 13px;
+    height: 13px;
+    background-image: url("../../images/tooltip.svg");
+    background-repeat: no-repeat;
+    background-position: (50%, 50%);
+    transform: translateY(-50%);
+    content: "";
+  }
+}
+
+.tooltip__text {
+  max-width: 162px;
+  padding: 10px 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: variables.$secondaryDarkColor;
+  background-color: variables.$secondaryLightColor;
+}

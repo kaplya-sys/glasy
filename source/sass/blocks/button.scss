@@ -1,56 +1,50 @@
 @use "global/variables";
 
 .button {
+  display: inline-block;
   padding: 12px 32px;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background-color: variables.$primaryLightColor;
-  border: 4px solid rgba(variables.$primaryLightColor, 0.4);
+  border: none;
   border-radius: 26px;
+  outline: 4px solid rgba(variables.$primaryLightColor, 0.4);
   box-shadow: 0 4px 12px rgba(variables.$primaryShadow, 0.1);
   cursor: pointer;
 
   &:hover {
     background-color: rgba(variables.$primaryLightColor, 0.4);
-    border: 4px solid variables.$primaryLightColor;
+    outline: 4px solid variables.$primaryLightColor;
     box-shadow: 0 4px 15px rgba(variables.$secondaryShadow, 0.15);
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:focus-visible {
     background-color: rgba(variables.$primaryLightColor, 0.5);
-    border: 2px solid variables.$primaryDarkColor;
+    outline: 2px solid variables.$primaryDarkColor;
   }
 
   &:active {
     background-color: variables.$primaryLightColor;
-    border: 2px solid variables.$primaryDarkColor;
+    outline: 2px solid variables.$primaryDarkColor;
   }
 
   &:disabled {
     color: variables.$border;
     background-color: variables.$dividingLine;
-    border: 4px solid rgba(variables.$primaryLightColor, 0.4);
+    outline: 4px solid rgba(variables.$primaryLightColor, 0.4);
   }
 
   &--bright {
     color: variables.$primaryLightColor;
     background-color: variables.$extraBright;
-    border: 4px solid rgba(variables.$extraBright, 0.3);
+    outline: 4px solid rgba(variables.$extraBright, 0.3);
 
     &:hover {
       color: variables.$primaryDarkColor;
       background-color: rgba(variables.$primaryLightColor, 0.3);
-      border: 4px solid variables.$extraBright;
-    }
-
-    &:focus {
-      outline: none;
+      outline: 4px solid variables.$extraBright;
     }
 
     &:focus-visible {
@@ -64,7 +58,7 @@
     &:disabled {
       color: variables.$secondaryDarkColor;
       background-color: variables.$border;
-      border: 4px solid rgba(variables.$border, 0.3);
+      outline: 4px solid rgba(variables.$border, 0.3);
     }
   }
 

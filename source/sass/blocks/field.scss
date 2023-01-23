@@ -1,4 +1,39 @@
+@use "global/variables";
+
 .field {
   width: 100%;
   padding: 14px 0 14px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: variables.$secondaryLightColor;
+  border: none;
+  outline: 1px solid variables.$border;
+  border-radius: 4px;
+
+  &:hover {
+    outline-color: variables.$primaryDarkColor;
+  }
+
+  &:focus-visible {
+    outline-width: 2px;
+    outline-color: variables.$primaryDarkColor;
+  }
+
+  &:disabled {
+    background-color: variables.$dividingLine;
+  }
+
+  &--error {
+    outline-color: variables.$error;
+
+    &:hover {
+      outline-width: 2px;
+      outline-color: variables.$error;
+    }
+  }
+}
+
+.field::placeholder {
+  color: variables.$border;
 }

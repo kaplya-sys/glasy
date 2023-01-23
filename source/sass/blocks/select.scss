@@ -1,6 +1,6 @@
 @use "global/variables";
 
-.header-select {
+.select {
   position: relative;
 
   &:hover &__list {
@@ -12,7 +12,7 @@
   }
 }
 
-.header-select__button {
+.select__button {
   padding: 8px 38px 8px 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -28,16 +28,16 @@
     border-radius: 30px;
   }
 
-  &:hover .header-select__icon {
+  &:hover .select__icon {
     transform: rotate(-180deg);
   }
 
-  &:hover .header-select__icon-path {
+  &:hover .select__icon-path {
     fill: variables.$primaryLightColor;
   }
 }
 
-.header-select__list {
+.select__list {
   position: absolute;
   top: 44px;
   left: 0;
@@ -68,7 +68,7 @@
   }
 }
 
-.header-select__item {
+.select__item {
   padding: 6px 13px 6px 16px;
 
   &:hover {
@@ -79,7 +79,7 @@
     background-color: variables.$neutral;
   }
 
-  &:active .header-select__link {
+  &:active .select__link {
     background-color: variables.$bright;
     color: variables.$primaryLightColor;
   }
@@ -105,7 +105,7 @@
   }
 }
 
-.header-select__link {
+.select__link {
   text-decoration: none;
   color: variables.$primaryDarkColor;
 
@@ -114,7 +114,7 @@
   }
 }
 
-.header-select__icon {
+.select__icon {
   position: absolute;
   top: 15px;
   right: 17px;

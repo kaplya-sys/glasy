@@ -4,7 +4,7 @@
   position: relative;
   margin-right: 16px;
 
-  &:focus-within .header-popover {
+  &:focus-within .popover {
     display: block;
   }
 
@@ -63,10 +63,6 @@
     width: calc(100% + 8px);
     height: 40px;
     content: "";
-  }
-
-  &--current + .header-popover {
-    display: block;
   }
 
   &--current {

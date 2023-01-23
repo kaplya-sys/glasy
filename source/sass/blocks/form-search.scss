@@ -1,5 +1,7 @@
 .form-search__label {
   position: relative;
+  display: inline-block;
+  width: 324px;
 }
 
 .form-search__field:placeholder-shown + .form-search__button {

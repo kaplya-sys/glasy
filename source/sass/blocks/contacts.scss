@@ -1,0 +1,51 @@
+@use "global/variables";
+
+.contacts {
+  padding: 64px;
+  background-image: url("../../images/feedback.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.contacts__container {
+  width: 343px;
+  padding: 40px;
+  background-color: variables.$primaryLightColor;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.contacts__text {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: variables.$secondaryDarkColor;
+
+  &--additional {
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+}
+
+.contacts__address {
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contacts__phone {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: variables.$primaryDarkColor;
+}
+
+.contacts__button {
+  text-decoration: none;
+  color: variables.$primaryLightColor;
+}
