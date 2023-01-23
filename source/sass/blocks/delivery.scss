@@ -67,10 +67,8 @@
   }
 }
 
-.delivery__form-labe-wrapper {
-  position: relative;
-  top: 0;
-  right: 0;
+.delivery__form-label-wrapper {
+  display: flex;
 }
 
 .delivery__form-label {
@@ -86,7 +84,4 @@
 }
 
 .delivery__tooltip {
-  position: absolute;
-  top: 0;
-  right: 0;
 }

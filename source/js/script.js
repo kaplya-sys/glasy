@@ -15,13 +15,11 @@ const basketListItem = document.querySelectorAll('.basket-list__item');
 const basketListCloseButton = document.querySelectorAll('.basket-list__close-button')
 
 let counter = 1;
-console.log(basketListItem);
+
 if (basketListItem) {
   popoverBasketText.classList.add('popover__basket-text--hide-text');
-  console.log("hide", basketListItem);
 } else {
   popoverBasket.classList.add('popover--basket--empty');
-  console.log("empty", basketListItem);
 }
 
 const nextSlider = () => {
@@ -68,13 +66,11 @@ for (let i = 0; i < userNavButtons.length; i++) {
   userNavButtons[i].addEventListener('click', () => {
     userNavButtons[i].classList.toggle('user-list__button--current');
     popovers[i].classList.toggle('popover--show');
-    console.log(userNavButtons)
-    console.log(popovers)
   });
 }
 
 for (let i = 0; i < basketListCloseButton.length; i++) {
   basketListCloseButton[i].addEventListener('click', () => {
-    basketListItem[i].outerHTML = ""
+    basketListItem[i].remove();
   });
 }
