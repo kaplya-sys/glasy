@@ -12,6 +12,8 @@ const popovers = document.querySelectorAll('.popover');
 const popoverBasket = document.querySelector('.popover--basket');
 const popoverBasketText = document.querySelector('.popover__basket-text');
 const basketListCloseButton = document.querySelectorAll('.basket-list__close-button')
+const contactsButton = document.querySelector('.contacts__button');
+const modal = document.querySelector('.modal__container');
 
 let counter = 1;
 
@@ -60,6 +62,14 @@ prevButton.addEventListener('click', () => {
 
 nextButton.addEventListener('click', () => {
   nextSlider();
+});
+
+contactsButton.addEventListener('click', () => {
+  modal.classList.remove('modal__container--close');
+});
+
+modal.addEventListener('click', () => {
+  modal.classList.add('modal__container--close');
 });
 
 for (let i = 0; i < userNavButtons.length; i++) {

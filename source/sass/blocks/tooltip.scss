@@ -13,7 +13,8 @@
   top: -12px;
   left: 27px;
   display: none;
-  width: 163px;
+  width: max-content;
+  max-width: 163px;
   padding: 10px 8px;
   font-weight: 400;
   font-size: 12px;
@@ -26,9 +27,9 @@
   &::before {
     position: absolute;
     top: 12px;
-    left: -8px;
-    width: 14px;
-    height: 14px;
+    left: -7px;
+    width: 13px;
+    height: 13px;
     background-color: variables.$secondaryLightColor;
     border-top: 1px solid variables.$border;
     border-left: 1px solid variables.$border;
