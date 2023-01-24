@@ -64,7 +64,8 @@ nextButton.addEventListener('click', () => {
   nextSlider();
 });
 
-contactsButton.addEventListener('click', () => {
+contactsButton.addEventListener('click', (event) => {
+  event.stopPropagation();
   modal.classList.remove('modal__container--close');
 });
 
