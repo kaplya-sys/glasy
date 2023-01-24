@@ -18,4 +18,20 @@
   margin-bottom: 4px;
   color: variables.$primaryDarkColor;
   text-underline-offset: 4px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }

@@ -69,11 +69,13 @@
 
 .delivery__form-label-wrapper {
   display: flex;
+  align-items: center;
+  margin-bottom: 8px;
 }
 
 .delivery__form-label {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-right: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -84,4 +86,5 @@
 }
 
 .delivery__tooltip {
+  position: relative;
 }

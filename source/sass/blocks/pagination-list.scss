@@ -19,6 +19,20 @@
   opacity: 0.3;
   cursor: pointer;
 
+  &:hover {
+    background: rgba(variables.$primaryLightColor, 0.3);
+    border: 1px solid variables.$primaryLightColor;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:focus-visible {
+    background: rgba(variables.$primaryLightColor, 0.3);
+    outline: 1px solid variables.$primaryDarkColor;
+  }
+
   &--current {
     opacity: 1;
   }

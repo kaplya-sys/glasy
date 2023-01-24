@@ -11,16 +11,16 @@ const userNavButtons = document.querySelectorAll('.user-list__button');
 const popovers = document.querySelectorAll('.popover');
 const popoverBasket = document.querySelector('.popover--basket');
 const popoverBasketText = document.querySelector('.popover__basket-text');
-const basketListItem = document.querySelectorAll('.basket-list__item');
 const basketListCloseButton = document.querySelectorAll('.basket-list__close-button')
 
 let counter = 1;
 
-if (basketListItem) {
-  popoverBasketText.classList.add('popover__basket-text--hide-text');
-} else {
-  popoverBasket.classList.add('popover--basket--empty');
-}
+const hideEmptyBasket = (basketList) => {
+  if (!basketList) {
+    popoverBasketText.classList.remove('popover__basket-text--hide-text');
+    popoverBasket.classList.add('popover--basket--empty');
+  }
+};
 
 const nextSlider = () => {
   showSlider(counter += 1);
@@ -65,12 +65,5 @@ nextButton.addEventListener('click', () => {
 for (let i = 0; i < userNavButtons.length; i++) {
   userNavButtons[i].addEventListener('click', () => {
     userNavButtons[i].classList.toggle('user-list__button--current');
-    popovers[i].classList.toggle('popover--show');
-  });
-}
-
-for (let i = 0; i < basketListCloseButton.length; i++) {
-  basketListCloseButton[i].addEventListener('click', () => {
-    basketListItem[i].remove();
   });
 }

@@ -8,17 +8,35 @@
     display: block;
   }
 
-  &:last-child {
+  &:last-child,
+  &:first-child {
     margin-right: 0;
   }
 }
 
 .user-list__contact-phone {
+  padding: 6px 16px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: variables.$primaryDarkColor;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }
 
 .user-list__popover {

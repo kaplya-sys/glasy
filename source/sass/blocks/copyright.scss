@@ -18,15 +18,19 @@
   text-underline-offset: 3px;
 
   &:hover {
-    opacity: 0.3;
-  }
-
-  &:active {
     opacity: 0.5;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
   &:focus-visible {
-    outline: 2px solid variables.$primaryDarkColor;
+    opacity: 0.3;
   }
 }
 

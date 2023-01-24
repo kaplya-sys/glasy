@@ -17,18 +17,16 @@
       <nav class="header__nav">
         <ul class="header__list site-list">
           <li class="site-list__item site-list__item--logo">
-            <a class="site-list__header-logo" href="index.html">
-              <img src="images/logo.svg" width="137" height="56" alt="Логотип Магазина Глейси.">
-            </a>
+            <img src="images/logo.svg" width="137" height="56" alt="Логотип Магазина Глейси.">
           </li>
           <li class="site-list__item">
             <div class="site-list__select select">
-              <button class="select__button" type="button">
-                <svg class="select__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="select__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
+              <a class="select__button" href="catalog.html">
+                <svg class="select__button-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="select__button-icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
                 </svg>
                 Каталог
-              </button>
+              </a>
               <ul class="select__list">
                 <li class="select__item select__item--current">
                   <a class="select__link" href="#">Новинки</a>
@@ -49,6 +47,7 @@
             </div>
           </li>
           <li class="site-list__item">
+            <!--site-list__link--current-->
             <a class="site-list__link" href="#">Доставка и оплата</a>
           </li>
           <li class="site-list__item">
@@ -118,7 +117,7 @@
             <!--popover--basket--empty-->
             <div class="user-list__popover popover popover--basket">
               <!--popover__basket-text--hide-text-->
-              <p class="popover__basket-text">Ваша корзина пока пуста</p>
+              <p class="popover__basket-text popover__basket-text--hide-text">Ваша корзина пока пуста</p>
               <div class="popover__popover-wrapper">
                 <h2 class="popover__title">Корзина</h2>
                 <ul class="popover__list basket-list">
@@ -195,9 +194,15 @@
         </ul>
         <button class="slider__button slider__button--prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
+          <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none" viewBox="0 0 7 12">
+            <path class="slider__button-icon-path" fill="#FCFCFC" fill-rule="evenodd" d="M1.135.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94L5.804 6.48a.665.665 0 0 0 .003-.943L1.135.865Z" clip-rule="evenodd"/>
+          </svg>
         </button>
         <button class="slider__button slider__button--next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
+          <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="7" height="12" fill="none" viewBox="0 0 7 12">
+            <path class="slider__button-icon-path" fill="#FCFCFC" fill-rule="evenodd" d="M1.135.865a.665.665 0 1 0-.94.94l4.201 4.201-4.201 4.202a.665.665 0 0 0 .94.94L5.804 6.48a.665.665 0 0 0 .003-.943L1.135.865Z" clip-rule="evenodd"/>
+          </svg>
         </button>
         <div class="slider__bottom-elements-wrapper">
           <ol class="slider__list pagination-list">
@@ -377,19 +382,36 @@
           <span class="delivery__form-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</span>
           <div class="delivery__form-field-group delivery__form-field-group--date">
             <div class="">
-              <label class="delivery__form-label" for="date-field">Дата</label>
+              <div class="delivery__form-label-wrapper">
+                <label class="delivery__form-label" for="date-field">Дата</label>
+                <div class="delivery__tooltip tooltip">
+                  <svg class="tooltip__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_21904_50)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12496C4.30774 2.12496 2.12502 4.30768 2.12502 7.0002C2.12502 9.69272 4.30774 11.8754 7.00026 11.8754C9.69278 11.8754 11.8755 9.69272 11.8755 7.0002C11.8755 4.30768 9.69278 2.12496 7.00026 2.12496ZM0.791687 7.0002C0.791687 3.5713 3.57136 0.791626 7.00026 0.791626C10.4292 0.791626 13.2088 3.5713 13.2088 7.0002C13.2088 10.4291 10.4292 13.2088 7.00026 13.2088C3.57136 13.2088 0.791687 10.4291 0.791687 7.0002ZM7.00007 6.33328C7.36826 6.33328 7.66674 6.63176 7.66674 6.99995V9.21671C7.66674 9.5849 7.36826 9.88338 7.00007 9.88338C6.63188 9.88338 6.33341 9.5849 6.33341 9.21671V6.99995C6.33341 6.63176 6.63188 6.33328 7.00007 6.33328ZM7.00007 4.11653C6.63188 4.11653 6.33341 4.415 6.33341 4.78319C6.33341 5.15138 6.63188 5.44986 7.00007 5.44986H7.0059C7.37409 5.44986 7.67257 5.15138 7.67257 4.78319C7.67257 4.415 7.37409 4.11653 7.0059 4.11653H7.00007Z" fill="#2D3440"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_21904_50">
+                        <rect width="14" height="14" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="tooltip__text">Введите дату</span>
+                </div>
+              </div>
             </div>
             <input class="delivery__form-field field" type="text" id="date-field" placeholder="01.04.2020">
           </div>
           <div class="delivery__form-field-group delivery__form-field-group--telephone">
-            <label class="delivery__form-label" for="telephone-field">Телефон</label>
+            <div class="delivery__form-label-wrapper">
+              <label class="delivery__form-label" for="telephone-field">Телефон</label>
+            </div>
             <input class="delivery__form-field field" type="tel" id="telephone-field" placeholder="+7 800 999-00-00">
           </div>
           <div class="delivery__form-field-group delivery__form-field-group--address">
             <div class="delivery__form-label-wrapper">
               <label class="delivery__form-label" for="address-field">Адрес</label>
               <div class="delivery__tooltip tooltip">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="tooltip__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_21904_50)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12496C4.30774 2.12496 2.12502 4.30768 2.12502 7.0002C2.12502 9.69272 4.30774 11.8754 7.00026 11.8754C9.69278 11.8754 11.8755 9.69272 11.8755 7.0002C11.8755 4.30768 9.69278 2.12496 7.00026 2.12496ZM0.791687 7.0002C0.791687 3.5713 3.57136 0.791626 7.00026 0.791626C10.4292 0.791626 13.2088 3.5713 13.2088 7.0002C13.2088 10.4291 10.4292 13.2088 7.00026 13.2088C3.57136 13.2088 0.791687 10.4291 0.791687 7.0002ZM7.00007 6.33328C7.36826 6.33328 7.66674 6.63176 7.66674 6.99995V9.21671C7.66674 9.5849 7.36826 9.88338 7.00007 9.88338C6.63188 9.88338 6.33341 9.5849 6.33341 9.21671V6.99995C6.33341 6.63176 6.63188 6.33328 7.00007 6.33328ZM7.00007 4.11653C6.63188 4.11653 6.33341 4.415 6.33341 4.78319C6.33341 5.15138 6.63188 5.44986 7.00007 5.44986H7.0059C7.37409 5.44986 7.67257 5.15138 7.67257 4.78319C7.67257 4.415 7.37409 4.11653 7.0059 4.11653H7.00007Z" fill="#2D3440"/>
                   </g>

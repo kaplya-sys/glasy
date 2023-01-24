@@ -4,6 +4,10 @@
   margin-right: 16px;
 }
 
+.site-list__header-logo {
+  display: inline-block;
+}
+
 .site-list__link {
   padding: 8px 16px;
   font-weight: 400;
@@ -13,8 +17,37 @@
   color: variables.$primaryDarkColor;
 
   &:hover {
+    background-color: rgba(variables.$primaryLightColor, 0.5);
+    border-radius: 30px;
+  }
+
+  &:active {
+    background-color: variables.$primaryLightColor;
+    border-radius: 30px;
+  }
+
+  &:focus-visible {
+    background: rgba(variables.$primaryLightColor, 0.5);
+    border-radius: 30px;
+    outline: 2px solid variables.$primaryDarkColor;
+  }
+
+  &--current {
     color: variables.$primaryLightColor;
     background-color: variables.$bright;
     border-radius: 30px;
+
+    &:hover {
+      background-color: rgba(variables.$bright, 0.6);
+    }
+
+    &:active {
+      background-color: rgba(variables.$bright, 0.3);
+    }
+
+    &:focus-visible {
+      background-color: variables.$bright;
+      outline: 2px solid variables.$primaryDarkColor;
+    }
   }
 }

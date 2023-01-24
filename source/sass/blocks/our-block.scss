@@ -25,4 +25,20 @@
   line-height: 30px;
   text-decoration: none;
   color: variables.$primaryDarkColor;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }

@@ -69,4 +69,20 @@
   background-position: (50% 50%);
   border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }
