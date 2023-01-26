@@ -6,7 +6,7 @@ const sliders = document.querySelectorAll('.elements-list__item');
 const bodyHeader = document.querySelector('.body__header');
 const bodyMain = document.querySelector('.body__main');
 const bodyFooter = document.querySelector('.body__footer');
-const paginationButtons = document.querySelectorAll('.pagination-list__button');
+const paginationButtons = document.querySelectorAll('.slier-pagination__button');
 const userNavButtons = document.querySelectorAll('.user-list__button');
 const popovers = document.querySelectorAll('.popover');
 const popoverBasket = document.querySelector('.popover--basket');
@@ -45,12 +45,13 @@ const showSlider = (position) => {
   }
 
   sliders.forEach(element => element.classList.remove('elements-list__item--current'));
-  paginationButtons.forEach(element => element.classList.remove('pagination-list__button--current'));
+  paginationButtons.forEach(element => element.classList.remove('slier-pagination__button--current'));
   sliders[counter - 1].classList.add('elements-list__item--current');
-  paginationButtons[counter - 1].classList.add('pagination-list__button--current');
+  paginationButtons[counter - 1].classList.add('slier-pagination__button--current');
   bodyHeader.setAttribute('class', 'body__header header theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
   bodyMain.setAttribute('class', 'body__main main-index theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
   bodyFooter.setAttribute('class', 'body__footer footer theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
+  console.log(bodyHeader)
 };
 
 clearButton.addEventListener('click', () => {
