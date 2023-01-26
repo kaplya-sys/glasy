@@ -5,11 +5,13 @@
 @use "blocks/page";
 @use "blocks/body";
 @use "blocks/button";
+@use "blocks/close-button";
 @use "blocks/field";
 @use "blocks/header";
 @use "blocks/site-list";
 @use "blocks/user-list";
-@use "blocks/select";
+@use "blocks/dropdown";
+@use "blocks/dropdown-list";
 @use "blocks/popover";
 @use "blocks/form-search";
 @use "blocks/form-login";
@@ -19,12 +21,14 @@
 @use "blocks/customers-list";
 @use "blocks/copyright";
 @use "blocks/main-index";
+@use "blocks/main-inner";
 @use "blocks/slider";
-@use "blocks/product-list";
-@use "blocks/pagination-list";
+@use "blocks/elements-list";
+@use "blocks/slier-pagination";
 @use "blocks/promotions";
+@use "blocks/gift";
 @use "blocks/popular-products";
-@use "blocks/catalog-item";
+@use "blocks/products-list";
 @use "blocks/about-us";
 @use "blocks/our-block";
 @use "blocks/subscribe";
@@ -33,4 +37,3 @@
 @use "blocks/contacts";
 @use "blocks/modal";
 @use "blocks/feedback";
-@use "blocks/feedback-form";

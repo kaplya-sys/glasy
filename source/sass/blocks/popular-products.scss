@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.popular-products__tittle {
+.popular-products__title {
   margin: 0;
   width: 530px;
   margin-bottom: 107px;
@@ -12,13 +12,4 @@
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-}
-
-.popular-products__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }

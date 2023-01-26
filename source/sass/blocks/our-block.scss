@@ -17,12 +17,15 @@
   color: variables.$secondaryDarkColor;
 }
 
-.our-block__link {
-  display: flex;
+.our-block__description {
+  margin: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.our-block__link {
   text-decoration: none;
   color: variables.$primaryDarkColor;
 

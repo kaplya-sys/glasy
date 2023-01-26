@@ -1,3 +1,14 @@
+@use "global/variables";
+
+.feedback {
+  width: 570px;
+  margin: auto;
+  padding: 64px 64px 66px 64px;
+  background-color: variables.$primaryLightColor;
+  border-radius: 8px;
+  box-shadow: 0 15px 40px rgba(variables.$primaryDarkColor, 0.12);
+}
+
 .feedback__close-button {
   display: block;
   border: none;
@@ -17,4 +28,23 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__form-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 442px;
+
+  &--message {
+    margin-bottom: 32px;
+  }
+}
+
+.feedback__form-button {
+  margin-left: auto;
 }

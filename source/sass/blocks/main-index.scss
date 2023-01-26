@@ -1,32 +1,32 @@
+@use "global/variables";
+
+.main-index {
+  flex-grow: 1;
+  width: variables.$pageWide;
+}
+
 .main-index__slider {
-  width: 100%;
   margin-bottom: 80px;
-  padding: 21px 0 26px 0;
 }
 
 .main-index__promotions {
-  width: 100%;
   margin-bottom: 80px;
 }
 
-.main-index__popular-product {
-  width: 100%;
+.main-index__popular-products {
   margin-bottom: 80px;
 }
 
 .main-index__about-us {
-  width: 100%;
   margin-bottom: 80px;
 }
 
-.main-index__blocks-wrapper {
+.main-index__column-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin-bottom: 80px;
 }
 
 .main-index__delivery {
-  width: 100%;
   margin-bottom: 80px;
 }

@@ -1,0 +1,6 @@
+@use "global/variables";
+
+.main-inner {
+  flex-grow: 1;
+  width: variables.$pageWide;
+}

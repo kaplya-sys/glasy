@@ -1,5 +1,11 @@
 @use "global/variables";
 
+.form-login {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .form-login__label {
   width: 324px;
   margin-bottom: 16px;

@@ -1,12 +1,12 @@
+@use "global/variables";
+
+.footer {
+  width: variables.$pageWide;
+}
+
 .footer__nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 48px 0 48px 4px;
-}
-
-.footer__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }

@@ -1,6 +1,15 @@
 @use "global/variables";
 
-.catalog-item {
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.products-list__item {
   position: relative;
   padding: 133px 40px 24px 40px;
   text-align: center;
@@ -8,14 +17,14 @@
   border-radius: 8px;
 }
 
-.catalog-item__title {
+.products-list__title {
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
-.catalog-item__image {
+.products-list__image {
   position: absolute;
   top: -30px;
   right: 0;
@@ -25,7 +34,7 @@
   margin-bottom: 16px;
 }
 
-.catalog-item__description {
+.products-list__description {
   margin: 0;
   margin-bottom: 20px;
   font-weight: 400;
@@ -34,20 +43,20 @@
   color: variables.$secondaryDarkColor;
 }
 
-.catalog-item__price {
+.products-list__price {
   position: relative;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
-.catalog-item__wrapper {
+.products-list__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.catalog-item__button {
+.products-list__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +72,7 @@
     border: 2px solid variables.$extraBright;
   }
 
-  &:hover .catalog-item__button-icon__path {
+  &:hover .products-list__button-icon-path {
     fill: variables.$primaryDarkColor;
   }
 
@@ -84,7 +93,7 @@
     background-color: variables.$disabledButton;
   }
 
-  &:disabled .catalog-item__button-icon__path {
+  &:disabled .products-list__button-icon-path {
     fill: variables.$secondaryDarkColor;
   }
 }

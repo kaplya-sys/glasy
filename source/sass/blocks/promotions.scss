@@ -6,22 +6,6 @@
   align-items: center;
 }
 
-.promotions__list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.promotions__item {
-  display: flex;
-  width: 570px;
-  background-color: variables.$neutral;
-  border-radius: 16px;
-}
-
 .promotions__title {
   margin: 0;
   margin-bottom: 55px;
@@ -32,19 +16,11 @@
   text-align: center;
 }
 
-.promotion__wrapper {
-  padding: 36px 0 36px 36px;
-}
-
-.promotion__description {
+.promotions__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   margin: 0;
-  margin-bottom: 28px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.promotion__button {
-  color: variables.$primaryDarkColor;
-  text-decoration: none;
+  padding: 0;
+  list-style-type: none;
 }

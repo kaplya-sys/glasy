@@ -1,6 +1,6 @@
 @use "global/variables";
 
-.modal__container {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -16,10 +16,5 @@
 }
 
 .modal__feedback {
-  width: 570px;
   margin: auto;
-  padding: 64px 64px 66px 64px;
-  background-color: variables.$primaryLightColor;
-  border-radius: 8px;
-  box-shadow: 0 15px 40px rgba(variables.$primaryDarkColor, 0.12);
 }

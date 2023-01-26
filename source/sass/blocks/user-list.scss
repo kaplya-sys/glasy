@@ -1,5 +1,13 @@
 @use "global/variables";
 
+.user-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .user-list__item {
   position: relative;
   margin-right: 16px;

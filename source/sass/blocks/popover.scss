@@ -24,13 +24,6 @@
   }
 }
 
-.popover__form {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .popover__title {
   margin: 0;
   margin-bottom: 32px;
@@ -39,8 +32,8 @@
   line-height: 30px;
 }
 
-.popover__basket-text {
-  display: block;
+.popover__text {
+  display: none;
   width: 288px;
   margin: 0;
   font-weight: 700;
@@ -48,17 +41,22 @@
   line-height: 30px;
   text-align: center;
 
-  &--hide-text {
-    display: none;
+  &--show {
+    display: block;
   }
 
-  &--hide-text + .popover__popover-wrapper {
-    display: block;
+  &--show + .popover__wrapper {
+    display: none;
   }
 }
 
-.popover__popover-wrapper {
-  display: none;
+.popover__wrapper {
+  display: block;
+}
+
+.popover__list {
+  margin: 0;
+  margin-bottom: 64px;
 }
 
 .popover__button {

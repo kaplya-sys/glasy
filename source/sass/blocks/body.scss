@@ -1,6 +1,10 @@
 @use "global/variables";
 
 .body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
   font-family: "Inter", sans-serif;
   font-style: normal;
   color: variables.$primaryDarkColor;
@@ -8,31 +12,13 @@
 }
 
 .body__header {
-  width: variables.$pageWide;
   margin: 0 auto;
 }
 
 .body__main {
-  flex-grow: 1;
-  width: variables.$pageWide;
   margin: 0 auto;
 }
 
 .body__footer {
-  width: variables.$pageWide;
   margin: 0 auto;
-}
-
-.body-theme {
-  &--theme-1 {
-    background-color: variables.$background_1;
-  }
-
-  &--theme-2 {
-    background-color: variables.$background_2;
-  }
-
-  &--theme-3 {
-    background-color: variables.$background_3;
-  }
 }

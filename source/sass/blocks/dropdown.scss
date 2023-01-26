@@ -1,32 +1,36 @@
 @use "global/variables";
 
-.site-list {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.dropdown {
+  position: relative;
+
+  &:hover &__list {
+    display: block;
+  }
+
+  &:focus-within &__list {
+    display: block;
+  }
 }
 
-.site-list__item--logo {
-  margin-right: 16px;
-}
-
-.site-list__header-logo {
-  display: inline-block;
-}
-
-.site-list__link {
-  padding: 8px 16px;
+.dropdown__button {
+  display: block;
+  padding: 8px 38px 8px 16px;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: variables.$primaryDarkColor;
+  border: none;
+  background-color: transparent;
 
   &:hover {
     background-color: rgba(variables.$primaryLightColor, 0.5);
     border-radius: 30px;
+  }
+
+  &:hover .dropdown__button-icon {
+    transform: rotate(-180deg);
   }
 
   &:active {
@@ -49,6 +53,14 @@
       background-color: rgba(variables.$bright, 0.6);
     }
 
+    &:hover .dropdown__button-icon {
+      transform: rotate(-180deg);
+    }
+
+    &:hover .dropdown__button-icon-path {
+      fill: variables.$primaryLightColor;
+    }
+
     &:active {
       background-color: rgba(variables.$bright, 0.3);
     }
@@ -58,4 +70,17 @@
       outline: 2px solid variables.$primaryDarkColor;
     }
   }
+}
+
+.dropdown__button-icon {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+}
+
+.dropdown__list {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  margin: 0;
 }

@@ -4,12 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.slider__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  padding: 21px 0 26px 0;
 }
 
 .slider__button {
@@ -65,7 +60,7 @@
   }
 }
 
-.slider__bottom-elements-wrapper {
+.slider__row-wrapper {
   display: flex;
   justify-content: space-between;
 }
