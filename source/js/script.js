@@ -3,12 +3,10 @@ const searchField = document.querySelector('.form-search__field');
 const prevButton = document.querySelector('.slider__button--prev');
 const nextButton = document.querySelector('.slider__button--next');
 const sliders = document.querySelectorAll('.elements-list__item');
-const bodyHeader = document.querySelector('.body__header');
-const bodyMain = document.querySelector('.body__main');
-const bodyFooter = document.querySelector('.body__footer');
+const pageBody = document.querySelector('.page-body');
 const paginationButtons = document.querySelectorAll('.slier-pagination__button');
 const userNavButtons = document.querySelectorAll('.user-list__button');
-const popovers = document.querySelectorAll('.popover');
+const popover = document.querySelector('.popover');
 const popoverBasket = document.querySelector('.popover--basket');
 const popoverBasketText = document.querySelector('.popover__text');
 const basketListCloseButton = document.querySelectorAll('.basket-list__close-button')
@@ -34,7 +32,7 @@ const prevSlider = () => {
 };
 
 const showSlider = (position) => {
-  const fragment =  /\theme--theme-[^ ]/;
+  const fragment =  /--theme-[^]/;
 
   if (position > sliders.length) {
     counter = 1
@@ -48,10 +46,7 @@ const showSlider = (position) => {
   paginationButtons.forEach(element => element.classList.remove('slier-pagination__button--current'));
   sliders[counter - 1].classList.add('elements-list__item--current');
   paginationButtons[counter - 1].classList.add('slier-pagination__button--current');
-  bodyHeader.setAttribute('class', 'body__header header theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
-  bodyMain.setAttribute('class', 'body__main main-index theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
-  bodyFooter.setAttribute('class', 'body__footer footer theme--theme-1'.replace(/--theme-[^]/, `--theme-${counter}`));
-  console.log(bodyHeader)
+  pageBody.setAttribute('class', 'page-body page-body--theme-1'.replace(fragment, `--theme-${counter}`));
 };
 
 clearButton.addEventListener('click', () => {
@@ -81,7 +76,10 @@ modal.addEventListener('click', (event) => {
 });
 
 for (let i = 0; i < userNavButtons.length; i++) {
-  userNavButtons[i].addEventListener('click', () => {
-    userNavButtons[i].classList.toggle('user-list__button--current');
+  userNavButtons[i].addEventListener('click', (event) => {
+    if (event.target !== popover) {
+      userNavButtons.forEach(element => element.classList.remove('user-list__button--current'));
+      userNavButtons[i].classList.toggle('user-list__button--current');
+    }
   });
 }

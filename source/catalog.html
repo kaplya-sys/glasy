@@ -9,18 +9,15 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
-
-<body class="body">
-  <!--theme--theme-1 theme--theme-2 theme--theme-3-->
-  <header class="body__header header theme--theme-1">
+<!--page-body--theme-1 page-body--theme-2 page-body--theme-3-->
+<body class="page-body page-body--theme-1">
+  <header class="page-body__header header">
     <div class="container">
       <nav class="header__nav">
-        <ul class="site-list">
-          <li class="site-list__item site-list__item--logo">
-            <a class="site-list__header-logo" href="index.html">
-              <img src="images/logo.svg" width="137" height="56" alt="Логотип Магазина Глейси.">
-            </a>
-          </li>
+        <a class="header__logo">
+          <img class="header__logo-icon" src="images/logo.svg" width="137" height="56" alt="Логотип Магазина Глейси.">
+        </a>
+        <ul class="header__site-menu site-list">
           <li class="site-list__item">
             <div class="dropdown">
               <a class="dropdown__button" href="catalog.html">
@@ -156,8 +153,7 @@
       </nav>
     </div>
   </header>
-  <!--theme--theme-1 theme--theme-2 theme--theme-3-->
-  <main class="body__main main-inner theme--theme-1">
+  <main class="page-body__main main-inner">
     <div class="container">
       <header class="main-inner__main-header">
         <ul class="breadcrumbs">
@@ -512,8 +508,7 @@
       </section>
     </div>
   </main>
-  <!--theme--theme-1 theme--theme-2 theme--theme-3-->
-  <footer class="body__footer footer theme--theme-1">
+  <footer class="page-body__footer footer">
     <div class="container">
       <nav class="footer__nav">
         <ul class="social-list">

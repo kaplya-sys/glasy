@@ -1,6 +1,6 @@
 @use "global/variables";
 
-.body {
+.page-body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -9,16 +9,28 @@
   font-style: normal;
   color: variables.$primaryDarkColor;
   background-color: variables.$secondaryLightColor;
+
+  &--theme-1 {
+    background-color: variables.$background_1;
+  }
+
+  &--theme-2 {
+    background-color: variables.$background_2;
+  }
+
+  &--theme-3 {
+    background-color: variables.$background_3;
+  }
 }
 
-.body__header {
+.page-body__header {
   margin: 0 auto;
 }
 
-.body__main {
+.page-body__main {
   margin: 0 auto;
 }
 
-.body__footer {
+.page-body__footer {
   margin: 0 auto;
 }

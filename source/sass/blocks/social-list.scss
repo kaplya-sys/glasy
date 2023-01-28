@@ -10,7 +10,7 @@
 }
 
 .social-list__link {
-  display: inline-block;
+  display: flex;
 
   &:hover .social-list__icon-circle {
     fill: variables.$primaryDarkColor;

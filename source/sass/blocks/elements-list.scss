@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  overflow: hidden;
 }
 
 .elements-list__item {
@@ -15,6 +16,10 @@
   &--current {
     margin-right: 62px;
     padding-left: 70px;
+    order: -1;
+  }
+
+  &--current + .elements-list__item {
     order: -1;
   }
 
@@ -55,9 +60,9 @@
 
 .elements-list__wrapper {
   display: none;
-  width: 432px;
+  width: 451px;
   min-height: 295px;
-  margin-right: 62px;
+  margin-right: 40px;
   padding-top: 7px;
 }
 

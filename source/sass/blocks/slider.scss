@@ -1,6 +1,6 @@
 @use "global/variables";
 
-.slider {
+.slider__content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@
   }
 
   &--prev {
-    left: 46%;
+    left: 45.5%;
     transform: rotate(180deg) translateX(-10%);
   }
 }

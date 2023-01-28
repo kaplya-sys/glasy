@@ -1,13 +1,40 @@
 @use "global/variables";
 
-.header {
-  width: variables.$pageWide;
-}
-
 .header__nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  min-width: 1170px;
   min-height: 104px;
+}
+
+.header__logo {
+  display: flex;
+  margin-right: 16px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    opacity: 0.3;
+  }
+}
+
+.header__logo-icon {
+  display: inline-block;
+}
+
+.header__site-menu {
+  margin: 0;
+  margin-right: auto;
 }

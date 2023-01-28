@@ -1,6 +1,6 @@
 @use "global/variables";
 
-.delivery {
+.delivery__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   border-radius: 16px;
 }
-
 
 .delivery__wrapper {
   width: 371px;

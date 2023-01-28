@@ -2,18 +2,10 @@
 
 .site-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.site-list__item--logo {
-  margin-right: 16px;
-}
-
-.site-list__header-logo {
-  display: inline-block;
 }
 
 .site-list__link {
