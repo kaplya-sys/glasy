@@ -3,3 +3,19 @@
 .main-inner {
   flex-grow: 1;
 }
+
+.main-inner__main-header {
+  margin-bottom: 16px;
+}
+
+.main-inner__title {
+  margin: 0;
+  margin-bottom: 42px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.main-inner__product-range {
+  margin-bottom: 40px;
+}

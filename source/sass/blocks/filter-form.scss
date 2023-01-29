@@ -1,0 +1,49 @@
+@use "global/variables";
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 93px;
+}
+
+.filter-form__filter-group {
+  margin: 0;
+  margin-right: 24px;
+  margin-bottom: 16px;
+
+  &--checkbox {
+    margin-bottom: 0;
+  }
+}
+
+.filter-form__button {
+  align-self: flex-end;
+  padding: 8px 52px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(variables.$primaryLightColor, 0.3);
+  border: none;
+  border-radius: 20px;
+  outline: 2px solid variables.$primaryLightColor;
+
+  &:hover {
+    background-color: variables.$primaryLightColor;
+    outline: 2px solid rgba(variables.$primaryLightColor, 0.3);
+  }
+
+  &:focus-visible {
+    background-color: rgba(variables.$primaryLightColor, 0.3);
+    outline: 2px solid variables.$primaryDarkColor;
+  }
+
+  &:active {
+    background-color: rgba(variables.$primaryLightColor, 0.5);
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}

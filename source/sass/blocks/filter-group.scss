@@ -1,0 +1,28 @@
+@use "global/variables";
+
+.filter-group {
+  padding: 0;
+  border: none;
+}
+
+.filter-group__title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.filter-group__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 8px 24px;
+  background-color: variables.$extraLight;
+  border-radius: 20px;
+  list-style-type: none;
+}
+
+.filter-group__item {
+  margin-right: 16px;
+}
+

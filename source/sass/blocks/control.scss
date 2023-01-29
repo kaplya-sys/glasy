@@ -1,0 +1,62 @@
+@use "global/variables";
+
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__input--radio:checked + .control__checkbox::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: variables.$primaryDarkColor;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.control__input--checkbox:checked + .control__checkbox::after {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 12px;
+  height: 4px;
+  border-left: 1.5px solid variables.$primaryDarkColor;
+  border-bottom: 1.5px solid variables.$primaryDarkColor;
+  transform: rotate(-50deg);
+  z-index: 1;
+  content: "";
+}
+
+.control__input--checkbox:checked + .control__checkbox::before {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 12px;
+  height: 6px;
+  background-color: variables.$extraLight;
+  transform: rotate(-50deg);
+  z-index: 1;
+  content: "";
+}
+
+.control__checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1.5px solid variables.$primaryDarkColor;
+  border-radius: 2px;
+}
+
+.control__input--radio + .control__checkbox {
+  border-radius: 50%;
+}
+
+.control__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

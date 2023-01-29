@@ -24,7 +24,7 @@
 
   &:hover {
     background: rgba(variables.$primaryLightColor, 0.3);
-    border: 1px solid variables.$primaryLightColor;
+    outline: 1px solid variables.$primaryLightColor;
   }
 
   &:active {

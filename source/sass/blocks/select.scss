@@ -1,0 +1,22 @@
+@use "global/variables";
+
+.select {
+  width: 196px;
+}
+
+.select-control {
+  width: 100%;
+  padding: 8px 63px 8px 16px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(variables.$primaryLightColor, 0.3);
+  background-image: url("../../images/select-icon.svg");
+  background-repeat: no-repeat;
+  background-position: (80%, 10%);
+  border: none;
+  border-radius: 20px;
+  appearance: none;
+}

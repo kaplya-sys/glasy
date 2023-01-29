@@ -1,0 +1,88 @@
+@use "global/variables";
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination__button {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-image: url("../../images/select-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50%  50%;
+
+  &:not(&--active):hover {
+    opacity: 0.5;
+  }
+
+  &:not(&--active):active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    opacity: 0.3;
+  }
+
+  &--prev {
+    transform: rotate(90deg);
+    margin-right: 8px;
+  }
+
+  &--next {
+    transform: rotate(-90deg);
+    margin-left: 8px;
+  }
+
+  &--active {
+    opacity: 0.3;
+  }
+}
+
+.pagination__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+  color: variables.$primaryDarkColor;
+
+  &:not(&--active):hover {
+    background: rgba(variables.$primaryLightColor, 0.5);
+    border-radius: 50%;
+  }
+
+  &:not(&--active):active {
+    background: rgba(variables.$primaryLightColor, 0.5);
+    border-radius: 50%;
+    border: 1px solid variables.$primaryLightColor;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background: rgba(variables.$primaryLightColor, 0.3);
+    border-radius: 50%;
+    border: 1px solid variables.$primaryDarkColor;
+  }
+
+  &--active {
+    background-color: variables.$primaryLightColor;
+    border-radius: 50%;
+  }
+}
