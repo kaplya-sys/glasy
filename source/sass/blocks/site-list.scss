@@ -31,17 +31,20 @@
   &:hover {
     background-color: rgba(variables.$primaryLightColor, 0.5);
     border-radius: 30px;
+    transition: all ease-out 0.4s;
   }
 
   &:active {
     background-color: variables.$primaryLightColor;
     border-radius: 30px;
+    transition: all ease-in 0.4s;
   }
 
   &:focus-visible {
     background: rgba(variables.$primaryLightColor, 0.5);
     border-radius: 30px;
     outline: 2px solid variables.$primaryDarkColor;
+    transition: all linear 0.3s;
   }
 
   &--current {

@@ -4,7 +4,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 21px 0 26px 0;
+  padding-top: 21px;
 }
 
 .slider__button {
@@ -25,19 +25,23 @@
 
   &:hover {
     background-color: variables.$primaryLightColor;
+    transition: all ease-out 0.4s;
   }
 
   &:hover .slider__button-icon-path {
     fill: variables.$primaryDarkColor;
+    transition: all ease-out 0.4s;
   }
 
   &:active {
     background-color: rgba(variables.$primaryLightColor, 0.5);
     border: none;
+    transition: all ease-in 0.4s;
   }
 
   &:active .slider__button-icon-path {
     fill: variables.$primaryDarkColor;
+    transition: all ease-in 0.4s;
   }
 
 
@@ -45,10 +49,12 @@
     background-color: rgba(variables.$primaryLightColor, 0.3);
     border: none;
     outline: 2px solid variables.$primaryDarkColor;
+    transition: all linear 0.3s;
   }
 
   &:focus-visible .slider__button-icon-path {
     fill: variables.$primaryDarkColor;
+    transition: all linear 0.3s;
   }
 
   &:disabled {

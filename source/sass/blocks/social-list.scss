@@ -14,14 +14,17 @@
 
   &:hover .social-list__icon-circle {
     fill: variables.$primaryDarkColor;
+    transition: all ease-out 0.4s;
   }
 
   &:hover .social-list__icon-rect {
     stroke-opacity: 0.5;
+    transition: all ease-out 0.4s;
   }
 
   &:active .social-list__icon-circle {
     opacity: 0.5;
+    transition: all ease-in 0.4s;
   }
 
   &:focus {
@@ -32,10 +35,12 @@
     fill: variables.$primaryDarkColor;
     stroke: variables.$primaryDarkColor;
     stroke-width: 2;
+    transition: all linear 0.3s;
   }
 
   &:focus-visible .social-list__icon-rect {
     stroke: variables.$primaryDarkColor;
     stroke-opacity: 1;
+    transition: all linear 0.3s;
   }
 }
