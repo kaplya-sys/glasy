@@ -19,31 +19,29 @@
         </a>
         <ul class="header__site-menu site-list">
           <li class="site-list__item">
-            <div class="dropdown">
-              <a class="dropdown__button" href="#">
-                <svg class="dropdown__button-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="dropdown__button-icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
-                </svg>
-                <span>Каталог</span>
-              </a>
-              <ul class="dropdown__list dropdown-list">
-                <li class="dropdown-list__item dropdown-list__item--current">
-                  <a class="dropdown-list__link" href="#">Новинки</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="catalog.html">Сливочное</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="#">Щербеты</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="#">Фруктовый лед</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="#">Мелорин</a>
-                </li>
-              </ul>
-            </div>
+            <a class="site-list__link site-list__link--dropdown" href="#">
+              <svg class="site-list__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="site-list__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
+              </svg>
+              <span class="site-list__text">Каталог</span>
+            </a>
+            <ul class="site-list__list dropdown-list">
+              <li class="dropdown-list__item dropdown-list__item--current">
+                <a class="dropdown-list__link" href="#">Новинки</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="catalog.html">Сливочное</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="#">Щербеты</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="site-list__item">
             <!--site-list__link--current-->
@@ -83,7 +81,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="user-list__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M9 2.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H9.7a.7.7 0 1 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V3.9a.7.7 0 0 0-.7-.7H9.7a.7.7 0 0 1-.7-.7ZM5.9 4.7c.2-.2.6-.2.9 0L10.1 8a.7.7 0 0 1 .2.2.7.7 0 0 1-.2.8l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H1.7a.7.7 0 1 1 0-1.3H8L5.9 5.7a.7.7 0 0 1 0-1Z" fill="#2D3440" />
               </svg>
-              <span>Вход</span>
+              <span class="site-list__text">Вход</span>
             </button>
             <!--popover--show-->
             <div class="user-list__popover popover popover--login">
@@ -207,7 +205,7 @@
           <div class="slider__row-wrapper">
             <ol class="slier-pagination">
               <li class="slier-pagination__item">
-                <button class="slier-pagination__button slier-pagination__button--current" type="button">
+                <button class="slier-pagination__button slier-pagination__button--active" type="button">
                   <span class="visually-hidden">1 слайд</span>
                 </button>
               </li>
@@ -224,7 +222,7 @@
             </ol>
             <ul class="social-list">
               <li class="social-list__item">
-                <a class="social-list__link" href="https://t.me/htmlacademy" target="blank">
+                <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
                   <span class="visually-hidden">Телеграм</span>
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none"/>
@@ -234,7 +232,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href=" https://vk.com/htmlacademy" target="blank">
+                <a class="social-list__link" href=" https://vk.com/htmlacademy" target="_blank">
                   <span class="visually-hidden">Вконтакте</span>
                   <svg class="social-list__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none" />
@@ -245,7 +243,7 @@
               </li>
               <li class="social-list__item">
                 <span class="visually-hidden">Youtube</span>
-                <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="blank">
+                <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                   <svg class="social-list__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none"/>
                     <path class="social-list__icon-path" d="M16.0038 13.7913L13.1963 12.4813C12.9513 12.3675 12.75 12.495 12.75 12.7662V15.2338C12.75 15.505 12.9513 15.6325 13.1963 15.5188L16.0025 14.2088C16.2488 14.0938 16.2488 13.9063 16.0038 13.7913ZM14 2C7.3725 2 2 7.3725 2 14C2 20.6275 7.3725 26 14 26C20.6275 26 26 20.6275 26 14C26 7.3725 20.6275 2 14 2ZM14 18.875C7.8575 18.875 7.75 18.3213 7.75 14C7.75 9.67875 7.8575 9.125 14 9.125C20.1425 9.125 20.25 9.67875 20.25 14C20.25 18.3213 20.1425 18.875 14 18.875Z" fill="#FCFCFC"/>
@@ -403,7 +401,7 @@
             <div class="delivery__form-field-group delivery__form-field-group--date">
               <div class="delivery__form-label-wrapper">
                 <label class="delivery__form-label" for="date-field">Дата</label>
-                <div class="delivery__tooltip tooltip">
+                <div class="delivery__tooltip tooltip" tabindex="0">
                   <svg class="tooltip__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_21904_49)">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12496C4.30774 2.12496 2.12502 4.30768 2.12502 7.0002C2.12502 9.69272 4.30774 11.8754 7.00026 11.8754C9.69278 11.8754 11.8755 9.69272 11.8755 7.0002C11.8755 4.30768 9.69278 2.12496 7.00026 2.12496ZM0.791687 7.0002C0.791687 3.5713 3.57136 0.791626 7.00026 0.791626C10.4292 0.791626 13.2088 3.5713 13.2088 7.0002C13.2088 10.4291 10.4292 13.2088 7.00026 13.2088C3.57136 13.2088 0.791687 10.4291 0.791687 7.0002ZM7.00007 6.33328C7.36826 6.33328 7.66674 6.63176 7.66674 6.99995V9.21671C7.66674 9.5849 7.36826 9.88338 7.00007 9.88338C6.63188 9.88338 6.33341 9.5849 6.33341 9.21671V6.99995C6.33341 6.63176 6.63188 6.33328 7.00007 6.33328ZM7.00007 4.11653C6.63188 4.11653 6.33341 4.415 6.33341 4.78319C6.33341 5.15138 6.63188 5.44986 7.00007 5.44986H7.0059C7.37409 5.44986 7.67257 5.15138 7.67257 4.78319C7.67257 4.415 7.37409 4.11653 7.0059 4.11653H7.00007Z" fill="#2D3440"/>
@@ -428,7 +426,7 @@
             <div class="delivery__form-field-group delivery__form-field-group--address">
               <div class="delivery__form-label-wrapper">
                 <label class="delivery__form-label" for="address-field">Адрес</label>
-                <div class="delivery__tooltip tooltip">
+                <div class="delivery__tooltip tooltip" tabindex="0">
                   <svg class="tooltip__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_21904_50)">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12496C4.30774 2.12496 2.12502 4.30768 2.12502 7.0002C2.12502 9.69272 4.30774 11.8754 7.00026 11.8754C9.69278 11.8754 11.8755 9.69272 11.8755 7.0002C11.8755 4.30768 9.69278 2.12496 7.00026 2.12496ZM0.791687 7.0002C0.791687 3.5713 3.57136 0.791626 7.00026 0.791626C10.4292 0.791626 13.2088 3.5713 13.2088 7.0002C13.2088 10.4291 10.4292 13.2088 7.00026 13.2088C3.57136 13.2088 0.791687 10.4291 0.791687 7.0002ZM7.00007 6.33328C7.36826 6.33328 7.66674 6.63176 7.66674 6.99995V9.21671C7.66674 9.5849 7.36826 9.88338 7.00007 9.88338C6.63188 9.88338 6.33341 9.5849 6.33341 9.21671V6.99995C6.33341 6.63176 6.63188 6.33328 7.00007 6.33328ZM7.00007 4.11653C6.63188 4.11653 6.33341 4.415 6.33341 4.78319C6.33341 5.15138 6.63188 5.44986 7.00007 5.44986H7.0059C7.37409 5.44986 7.67257 5.15138 7.67257 4.78319C7.67257 4.415 7.37409 4.11653 7.0059 4.11653H7.00007Z" fill="#2D3440"/>
@@ -471,7 +469,7 @@
       <nav class="footer__nav">
         <ul class="social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="https://t.me/htmlacademy" target="blank">
+            <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Телеграм</span>
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none"/>
@@ -481,7 +479,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href=" https://vk.com/htmlacademy" target="blank">
+            <a class="social-list__link" href=" https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Вконтакте</span>
               <svg class="social-list__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none"/>
@@ -492,7 +490,7 @@
           </li>
           <li class="social-list__item">
             <span class="visually-hidden">Youtube</span>
-            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="blank">
+            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <svg class="social-list__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none"/>
                 <path class="social-list__icon-path" d="M16.0038 13.7913L13.1963 12.4813C12.9513 12.3675 12.75 12.495 12.75 12.7662V15.2338C12.75 15.505 12.9513 15.6325 13.1963 15.5188L16.0025 14.2088C16.2488 14.0938 16.2488 13.9063 16.0038 13.7913ZM14 2C7.3725 2 2 7.3725 2 14C2 20.6275 7.3725 26 14 26C20.6275 26 26 20.6275 26 14C26 7.3725 20.6275 2 14 2ZM14 18.875C7.8575 18.875 7.75 18.3213 7.75 14C7.75 9.67875 7.8575 9.125 14 9.125C20.1425 9.125 20.25 9.67875 20.25 14C20.25 18.3213 20.1425 18.875 14 18.875Z" fill="#FCFCFC"/>

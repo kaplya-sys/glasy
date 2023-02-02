@@ -61,7 +61,7 @@
   color: variables.$primaryDarkColor;
 
   &:not(&--active):hover {
-    background: rgba(variables.$primaryLightColor, 0.5);
+    background-color: rgba(variables.$primaryLightColor, 0.5);
     border-radius: 50%;
   }
 
@@ -76,7 +76,7 @@
   }
 
   &:focus-visible {
-    background: rgba(variables.$primaryLightColor, 0.3);
+    background-color: rgba(variables.$primaryLightColor, 0.3);
     border-radius: 50%;
     border: 1px solid variables.$primaryDarkColor;
   }

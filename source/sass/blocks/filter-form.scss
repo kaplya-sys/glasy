@@ -31,16 +31,19 @@
   &:hover {
     background-color: variables.$primaryLightColor;
     outline: 2px solid rgba(variables.$primaryLightColor, 0.3);
+    transition: all ease-out 0.4s;
   }
 
   &:focus-visible {
     background-color: rgba(variables.$primaryLightColor, 0.3);
     outline: 2px solid variables.$primaryDarkColor;
+    transition: all linear 0.3s;
   }
 
   &:active {
     background-color: rgba(variables.$primaryLightColor, 0.5);
     outline: none;
+    transition: all linear 0.3s;
   }
 
   &:disabled {

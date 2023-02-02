@@ -6,7 +6,7 @@ const sliders = document.querySelectorAll('.elements-list__item');
 const pageBody = document.querySelector('.page-body');
 const paginationButtons = document.querySelectorAll('.slier-pagination__button');
 const userNavButtons = document.querySelectorAll('.user-list__button');
-const popover = document.querySelector('.popover');
+const popover = document.querySelectorAll('.popover');
 const popoverBasket = document.querySelector('.popover--basket');
 const popoverBasketText = document.querySelector('.popover__text');
 const basketListCloseButton = document.querySelectorAll('.basket-list__close-button')
@@ -75,11 +75,22 @@ modal.addEventListener('click', (event) => {
   }
 });
 
+const showPopover = (pressedButton) => {
+  pressedButton.classList.add('user-list__button--current');
+};
+
+const hidePopover = (pressedButton) => {
+  pressedButton.classList.remove('user-list__button--current');
+};
+
+function togglePopper(pressedButton) {
+  pressedButton.hasAttribute('user-list__button--current')?hidePopover(pressedButton):showPopover(pressedButton);
+};
+
 for (let i = 0; i < userNavButtons.length; i++) {
   userNavButtons[i].addEventListener('click', (event) => {
-    if (event.target !== popover) {
-      userNavButtons.forEach(element => element.classList.remove('user-list__button--current'));
-      userNavButtons[i].classList.toggle('user-list__button--current');
-    }
+    event.preventDefault();
+    userNavButtons.forEach(element => element.classList.remove('user-list__button--current'));
+    togglePopper(userNavButtons[i]);
   });
-}
+};

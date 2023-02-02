@@ -61,9 +61,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 30px;
   background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.3);
+  cursor: pointer;
 
   &:hover {
     background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.5);
@@ -74,22 +75,12 @@
   }
 
   &:focus-visible {
-    padding: 4px 14px;
     background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.5);
     border: 2px solid #000000;
   }
 
   &:active {
     background-color: variables.$primaryLightColor;
-  }
-
-  &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(100% + 8px);
-    height: 40px;
-    content: "";
   }
 
   &--current {
@@ -102,15 +93,14 @@
   }
 
   &--search {
-    padding: 8px;
-
-    &:focus-visible {
-      padding: 6px;
-    }
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    padding: 0;
   }
 
   &--search .user-list__icon {
-    margin: 0;
+    margin-right: 0;
   }
 }
 

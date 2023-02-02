@@ -14,29 +14,34 @@
 }
 
 .slier-pagination__button {
+  display: flex;
   width: 12px;
   height: 12px;
-  background-color: variables.$primaryLightColor;
+  padding: 0;
+  background-color: rgba(variables.$primaryLightColor, 0.3);
   border: none;
   border-radius: 50%;
-  opacity: 0.3;
   cursor: pointer;
 
-  &:hover {
+  &:not(&--active):hover {
     background: rgba(variables.$primaryLightColor, 0.3);
-    outline: 1px solid variables.$primaryLightColor;
+    border: 1px solid variables.$primaryLightColor;
   }
 
-  &:active {
-    opacity: 0.5;
+  &:not(&--active):active {
+    background-color: rgba(variables.$primaryLightColor, 0.5);
   }
 
-  &:focus-visible {
+  &:focus {
+    outline: none;
+  }
+
+  &:not(&--active):focus-visible {
     background: rgba(variables.$primaryLightColor, 0.3);
-    outline: 1px solid variables.$primaryDarkColor;
+    border: 1px solid variables.$primaryDarkColor;
   }
 
-  &--current {
-    opacity: 1;
+  &--active {
+    background-color: variables.$primaryLightColor;
   }
 }

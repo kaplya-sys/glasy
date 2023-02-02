@@ -1,10 +1,32 @@
 @use "global/variables";
 
+.tooltip {
+  &:focus-within .tooltip__text {
+    display: block;
+  }
+
+  &:focus-within .tooltip__icon {
+    opacity: 0.5;
+  }
+
+  &:active .tooltip__icon {
+    opacity: 0.5;
+  }
+
+  &:focus-within {
+    outline: none;
+  }
+}
+
 .tooltip__icon {
-  display: block;
+  display: flex;
 
   &:hover + .tooltip__text {
     display: block;
+  }
+
+  &:hover {
+    opacity: 0.3;
   }
 }
 

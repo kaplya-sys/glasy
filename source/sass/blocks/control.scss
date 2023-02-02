@@ -3,6 +3,59 @@
 .control {
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.control__checkbox {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1.5px solid variables.$primaryDarkColor;
+  border-radius: 2px;
+}
+
+.control__input {
+  &:hover + .control__checkbox {
+    border-color: variables.$primaryLightColor;
+    transition: all ease-out 0.2s;
+  }
+
+  &--checkbox:checked:hover + .control__checkbox::after {
+    border-left-color: variables.$primaryLightColor;
+    border-bottom-color: variables.$primaryLightColor;
+    transition: all ease-out 0.2s;
+  }
+
+  &--radio:checked:hover + .control__checkbox::after {
+    background-color: variables.$primaryLightColor;
+    transition: all ease-out 0.2s;
+  }
+
+  &:active + .control__checkbox {
+    opacity: 0.5;
+    transition: all ease-in 0.1s;
+  }
+
+  &:focus-visible + .control__checkbox {
+    border: 2px solid variables.$primaryDarkColor;
+    transition: all linear 0.3s;
+  }
+
+  &--checkbox:checked:focus-visible + .control__checkbox::after {
+    border-left: 2px solid variables.$primaryDarkColor;
+    border-bottom: 2px solid variables.$primaryDarkColor;
+    transition: all linear 0.3s;
+  }
+
+  &--radio:checked:focus-visible + .control__checkbox::after {
+    background-color: variables.$primaryDarkColor;
+    transition: all linear 0.3s;
+  }
+
+  &:disabled + .control__checkbox {
+    opacity: 0.5;
+  }
 }
 
 .control__input--radio:checked + .control__checkbox::after {
@@ -40,15 +93,6 @@
   transform: rotate(-50deg);
   z-index: 1;
   content: "";
-}
-
-.control__checkbox {
-  position: relative;
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  border: 1.5px solid variables.$primaryDarkColor;
-  border-radius: 2px;
 }
 
 .control__input--radio + .control__checkbox {

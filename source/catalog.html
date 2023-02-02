@@ -19,31 +19,29 @@
         </a>
         <ul class="header__site-menu site-list">
           <li class="site-list__item">
-            <div class="dropdown">
-              <a class="dropdown__button" href="catalog.html">
-                <svg class="dropdown__button-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="dropdown__button-icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
-                </svg>
-                <span>Каталог</span>
-              </a>
-              <ul class="dropdown__list dropdown-list">
-                <li class="dropdown-list__item dropdown-list__item--current">
-                  <a class="dropdown-list__link" href="#">Новинки</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="#">Сливочное</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="#">Щербеты</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="#">Фруктовый лед</a>
-                </li>
-                <li class="dropdown-list__item">
-                  <a class="dropdown-list__link" href="#">Мелорин</a>
-                </li>
-              </ul>
-            </div>
+            <a class="site-list__link site-list__link--dropdown" href="#">
+              <svg class="site-list__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="site-list__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M1.8 1a.7.7 0 0 0-1 1l4.7 4.7a.7.7 0 0 0 1 0L11 2a.7.7 0 0 0-.9-1L6 5.3 1.8 1.1Z" fill="#2D3440"/>
+              </svg>
+              <span class="site-list__text">Каталог</span>
+            </a>
+            <ul class="site-list__list dropdown-list">
+              <li class="dropdown-list__item dropdown-list__item--current">
+                <a class="dropdown-list__link" href="#">Новинки</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="catalog.html">Сливочное</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="#">Щербеты</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li class="site-list__item">
             <!--site-list__link--current-->
@@ -83,7 +81,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="user-list__icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M9 2.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H9.7a.7.7 0 1 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V3.9a.7.7 0 0 0-.7-.7H9.7a.7.7 0 0 1-.7-.7ZM5.9 4.7c.2-.2.6-.2.9 0L10.1 8a.7.7 0 0 1 .2.2.7.7 0 0 1-.2.8l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H1.7a.7.7 0 1 1 0-1.3H8L5.9 5.7a.7.7 0 0 1 0-1Z" fill="#2D3440" />
               </svg>
-              <span>Вход</span>
+              <span class="site-list__text">Вход</span>
             </button>
             <!--popover--show-->
             <div class="user-list__popover popover popover--login">
@@ -513,7 +511,7 @@
       <nav class="footer__nav">
         <ul class="social-list">
           <li class="social-list__item">
-            <a class="social-list__link" href="https://t.me/htmlacademy" target="blank">
+            <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Телеграм</span>
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none" />
@@ -526,7 +524,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href=" https://vk.com/htmlacademy" target="blank">
+            <a class="social-list__link" href=" https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Вконтакте</span>
               <svg class="social-list__icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -541,7 +539,7 @@
           </li>
           <li class="social-list__item">
             <span class="visually-hidden">Youtube</span>
-            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="blank">
+            <a class="social-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
               <svg class="social-list__icon" width="28" height="28" viewBox="0 0 28 28" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <circle class="social-list__icon-circle" cx="14" cy="14" r="10" fill="none" />
@@ -583,13 +581,11 @@
               </defs>
             </svg>
           </a>
-          <span class="copyright__text">Сделано в <a class="copyright__text-link" href="https://htmlacademy.ru/">.html
-              academy</a> © 2021</span>
+          <span class="copyright__text">Сделано в <a class="copyright__text-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
         </div>
       </nav>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 

@@ -3,7 +3,8 @@
 .products-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 91px;
   padding: 0;
   list-style-type: none;
 }
@@ -52,6 +53,7 @@
 .products-list__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -61,6 +63,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
+  padding: 0;
   background-color: variables.$extraBright;
   border: none;
   border-radius: 50%;
@@ -69,15 +72,18 @@
   &:hover {
     background-color: variables.$primaryLightColor;
     border: 2px solid variables.$extraBright;
+    transition: all ease-out 0.4s;
   }
 
   &:hover .products-list__button-icon-path {
     fill: variables.$primaryDarkColor;
+    transition: all ease-out 0.4s;
   }
 
   &:active {
     background-color: variables.$extraLight;
     border: 2px solid variables.$extraBright;
+    transition: all ease-in 0.4s;
   }
 
   &:focus {
@@ -85,7 +91,14 @@
   }
 
   &:focus-visible {
+    background-color: variables.$extraBright;
     border: 2px solid variables.$primaryDarkColor;
+    transition: all linear 0.3s;
+  }
+
+  &:focus-visible .products-list__button-icon-path {
+    fill: variables.$primaryLightColor;
+    transition: all linear 0.3s;
   }
 
   &:disabled {

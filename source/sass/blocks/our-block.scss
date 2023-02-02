@@ -2,7 +2,6 @@
 
 .our-block {
   width: 570px;
-  padding: 32px 235px 67px 32px;
   background-image: url("../../images/news.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -26,6 +25,10 @@
 }
 
 .our-block__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 67px;
   text-decoration: none;
   color: variables.$primaryDarkColor;
 

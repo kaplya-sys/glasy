@@ -19,4 +19,21 @@
   border: none;
   border-radius: 20px;
   appearance: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(variables.$primaryLightColor, 0.5);
+    transition: all ease-out 0.4s;
+  }
+
+  &:active {
+    background-color: rgba(variables.$primaryLightColor, 0.3);
+    transition: all ease-out 0.4s;
+  }
+
+  &:focus-visible {
+    background-color: rgba(variables.$primaryLightColor, 0.4);
+    outline: 2px solid variables.$primaryLightColor;
+    transition: all linear 0.3s;
+  }
 }
