@@ -38,11 +38,12 @@
   color: variables.$secondaryDarkColor;
   background-repeat: no-repeat;
 
-  &--ice_lolly {
+  &--ice-lolly {
     background-image: url("../../images/ice_lolly.svg");
   }
 
   &--cow {
+    width: 95%;
     background-image: url("../../images/cow.svg");
   }
 

@@ -12,26 +12,27 @@
   border-radius: 26px;
   outline: 4px solid rgba(variables.$primaryLightColor, 0.4);
   box-shadow: 0 4px 12px rgba(variables.$primaryShadow, 0.1);
+  outline-offset: 0;
   cursor: pointer;
 
   &:hover {
     background-color: rgba(variables.$primaryLightColor, 0.4);
     outline: 4px solid variables.$primaryLightColor;
     box-shadow: 0 4px 15px rgba(variables.$secondaryShadow, 0.15);
-    transition: all ease-out 0.4s;
+    transition: all ease-out 0.3s;
   }
 
   &:focus-visible {
     background-color: rgba(variables.$primaryLightColor, 0.5);
     outline: 2px solid variables.$primaryDarkColor;
     box-shadow: 0 4px 12px rgba(variables.$primaryShadow, 0.1);
-    transition: all linear 0.3s;
+    transition: all linear 0.2s;
   }
 
   &:active {
     background-color: variables.$primaryLightColor;
     outline: 2px solid variables.$primaryDarkColor;
-    transition: all ease-in 0.4s;
+    transition: all ease-in 0.3s;
   }
 
   &:disabled {

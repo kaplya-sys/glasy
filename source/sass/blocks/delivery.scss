@@ -12,6 +12,7 @@
 
 .delivery__wrapper {
   width: 371px;
+  padding-top: 6px;
 }
 
 .delivery__title {
@@ -80,8 +81,17 @@
   line-height: 20px;
 }
 
+.delivery__form-field::placeholder {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .delivery__form-button {
   margin: 0 auto;
+  margin-bottom: 2px;
 }
 
 .delivery__tooltip {

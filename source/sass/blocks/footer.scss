@@ -4,6 +4,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-width: 1170px;
-  padding: 48px 0 48px 4px;
+  padding: 48px 0 48px 2px;
+}
+
+.footer__social {
+  margin-top: -2px;
+  margin-right: auto;
+}
+
+.footer__customers {
+  margin-right: 15.1%;
 }

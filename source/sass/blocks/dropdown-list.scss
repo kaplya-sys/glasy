@@ -35,15 +35,22 @@
   }
 
   &:focus-within {
-    background-color: variables.$neutral;
+    background-color: variables.$extraBright;
   }
 
   &:active {
     background-color: variables.$neutral;
-    color: variables.$primaryLightColor;
   }
 
   &--current {
+    background-color: variables.$bright;
+  }
+
+  &--current .dropdown-list__link {
+    color: variables.$primaryLightColor;
+  }
+
+  &--highlighted {
     position: relative;
     padding-top: 8px;
     padding-bottom: 8px;

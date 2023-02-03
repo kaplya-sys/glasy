@@ -4,7 +4,7 @@
   width: 196px;
 }
 
-.select-control {
+.select__control {
   width: 100%;
   padding: 8px 63px 8px 16px;
   font-family: "Inter", "Arial", sans-serif;
@@ -23,17 +23,17 @@
 
   &:hover {
     background-color: rgba(variables.$primaryLightColor, 0.5);
-    transition: all ease-out 0.4s;
+    transition: all ease-out 0.3s;
   }
 
   &:active {
     background-color: rgba(variables.$primaryLightColor, 0.3);
-    transition: all ease-out 0.4s;
+    transition: all ease-out 0.3s;
   }
 
   &:focus-visible {
     background-color: rgba(variables.$primaryLightColor, 0.4);
     outline: 2px solid variables.$primaryLightColor;
-    transition: all linear 0.3s;
+    transition: all linear 0.2s;
   }
 }

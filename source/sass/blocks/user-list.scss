@@ -68,7 +68,7 @@
 
   &:hover {
     background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.5);
-    transition: all ease-out 0.4s;
+    transition: all ease-out 0.3s;
   }
 
   &:focus {
@@ -78,12 +78,12 @@
   &:focus-visible {
     background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.5);
     border: 2px solid #000000;
-    transition: all linear 0.3s;
+    transition: all linear 0.2s;
   }
 
   &:active {
     background-color: variables.$primaryLightColor;
-    transition: all ease-in 0.4s;
+    transition: all ease-in 0.3s;
   }
 
   &--current {

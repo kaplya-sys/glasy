@@ -6,6 +6,22 @@
   cursor: pointer;
 }
 
+.control__icon {
+  margin-right: 8px;
+
+  &:hover .control__icon-path {
+    fill: variables.$primaryLightColor;
+  }
+
+  &:active .control__icon-path {
+    fill-opacity: 0.3;
+  }
+
+  &--checked {
+    display: none;
+  }
+}
+
 .control__checkbox {
   position: relative;
   width: 16px;
@@ -21,36 +37,16 @@
     transition: all ease-out 0.2s;
   }
 
-  &--checkbox:checked:hover + .control__checkbox::after {
-    border-left-color: variables.$primaryLightColor;
-    border-bottom-color: variables.$primaryLightColor;
-    transition: all ease-out 0.2s;
-  }
-
   &--radio:checked:hover + .control__checkbox::after {
     background-color: variables.$primaryLightColor;
     transition: all ease-out 0.2s;
   }
 
-  &:active + .control__checkbox {
-    opacity: 0.5;
-    transition: all ease-in 0.1s;
-  }
-
+  &:focus-visible + .control__icon,
+  &:focus-visible ~ .control__icon--checked,
   &:focus-visible + .control__checkbox {
-    border: 2px solid variables.$primaryDarkColor;
-    transition: all linear 0.3s;
-  }
-
-  &--checkbox:checked:focus-visible + .control__checkbox::after {
-    border-left: 2px solid variables.$primaryDarkColor;
-    border-bottom: 2px solid variables.$primaryDarkColor;
-    transition: all linear 0.3s;
-  }
-
-  &--radio:checked:focus-visible + .control__checkbox::after {
-    background-color: variables.$primaryDarkColor;
-    transition: all linear 0.3s;
+    outline: 2px solid variables.$primaryDarkColor;
+    outline-offset: 1px;
   }
 
   &:disabled + .control__checkbox {
@@ -70,29 +66,12 @@
   content: "";
 }
 
-.control__input--checkbox:checked + .control__checkbox::after {
-  position: absolute;
-  top: 0;
-  left: 30%;
-  width: 12px;
-  height: 4px;
-  border-left: 1.5px solid variables.$primaryDarkColor;
-  border-bottom: 1.5px solid variables.$primaryDarkColor;
-  transform: rotate(-50deg);
-  z-index: 1;
-  content: "";
+.control__input--checkbox:checked + .control__icon {
+  display: none;
 }
 
-.control__input--checkbox:checked + .control__checkbox::before {
-  position: absolute;
-  top: 0;
-  left: 40%;
-  width: 12px;
-  height: 6px;
-  background-color: variables.$extraLight;
-  transform: rotate(-50deg);
-  z-index: 1;
-  content: "";
+.control__input--checkbox:checked ~ .control__icon--checked {
+  display: block;
 }
 
 .control__input--radio + .control__checkbox {

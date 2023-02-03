@@ -63,7 +63,7 @@
   width: 451px;
   min-height: 295px;
   margin-right: 40px;
-  padding-top: 7px;
+  padding-top: 9px;
 }
 
 .elements-list__image-wrapper {
@@ -73,7 +73,7 @@
   &::before {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 51%;
     width: 100px;
     height: 100px;
     background-color: variables.$secondaryLightColor;

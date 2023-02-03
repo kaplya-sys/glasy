@@ -25,10 +25,10 @@
               <span class="site-list__text">Каталог</span>
             </a>
             <ul class="site-list__list dropdown-list">
-              <li class="dropdown-list__item dropdown-list__item--current">
+              <li class="dropdown-list__item dropdown-list__item--highlighted">
                 <a class="dropdown-list__link" href="#">Новинки</a>
               </li>
-              <li class="dropdown-list__item">
+              <li class="dropdown-list__item dropdown-list__item--current">
                 <a class="dropdown-list__link" href="catalog.html">Сливочное</a>
               </li>
               <li class="dropdown-list__item">
@@ -172,7 +172,7 @@
           <fieldset class="filter-form__filter-group filter-group">
             <legend class="filter-group__title">Сортировка:</legend>
             <div class="select">
-              <select class="select-control" aria-label="Сортировка">
+              <select class="select__control" aria-label="Сортировка">
                 <option value="cheap">по популярности</option>
                 <option value="price">по стоимости</option>
               </select>
@@ -194,6 +194,7 @@
             </div>
           </fieldset>
           <fieldset class="filter-form__filter-group filter-group">
+            <legend class="filter-group__title">Жирность:</legend>
             <ul class="filter-group__list">
               <li class="filter-group__item">
                 <label class="control">
@@ -231,35 +232,155 @@
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="chocolate" checked>
-                  <span class="control__checkbox"></span>
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <g clip-path="url(#b)">
+                        <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                      <clipPath id="b">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="control__label">шоколадные</span>
                 </label>
               </li>
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="sugar-sprinkles" checked>
-                  <span class="control__checkbox"></span>
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <g clip-path="url(#b)">
+                        <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                      <clipPath id="b">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="control__label">сахарные посыпки</span>
                 </label>
               </li>
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="fruits">
-                  <span class="control__checkbox"></span>
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <g clip-path="url(#b)">
+                        <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                      <clipPath id="b">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="control__label">фрукты</span>
                 </label>
               </li>
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="syrups">
-                  <span class="control__checkbox"></span>
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <g clip-path="url(#b)">
+                        <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                      <clipPath id="b">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="control__label">сиропы</span>
                 </label>
               </li>
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="jams">
-                  <span class="control__checkbox"></span>
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                    <g clip-path="url(#a)">
+                      <g clip-path="url(#b)">
+                        <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                      <clipPath id="b">
+                        <path fill="#fff" d="M0 0h16v16H0z"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
                   <span class="control__label">джемы</span>
                 </label>
               </li>
@@ -507,7 +628,7 @@
   <footer class="page-body__footer footer">
     <div class="container">
       <nav class="footer__nav">
-        <ul class="social-list">
+        <ul class="footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Телеграм</span>
@@ -550,7 +671,7 @@
             </a>
           </li>
         </ul>
-        <ul class="customers-list">
+        <ul class="footer__customers customers-list">
           <li class="customers-list__item">
             <a class="customers-list__link customers-list__link--suppliers" href="#">Для поставщиков</a>
           </li>

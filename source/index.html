@@ -26,7 +26,7 @@
               <span class="site-list__text">Каталог</span>
             </a>
             <ul class="site-list__list dropdown-list">
-              <li class="dropdown-list__item dropdown-list__item--current">
+              <li class="dropdown-list__item dropdown-list__item--highlighted">
                 <a class="dropdown-list__link" href="#">Новинки</a>
               </li>
               <li class="dropdown-list__item">
@@ -220,7 +220,7 @@
                 </button>
               </li>
             </ol>
-            <ul class="social-list">
+            <ul class="slider__social social-list">
               <li class="social-list__item">
                 <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
                   <span class="visually-hidden">Телеграм</span>
@@ -261,23 +261,17 @@
         <div class="promotions__content">
           <h2 class="promotions__title">Заказывайте мороженое и получайте подарки!</h2>
           <ul class="promotions__list">
-            <li class="gift">
-              <div class="gift__wrapper">
-                <h3 class="gift__title">Малинка даром!</h3>
-                <p class="gift__description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <!--button--loading-->
-                <a class="gift__button button" href="#">Хочу подарок</a>
-              </div>
-              <img class="gift__image" src="./images/raspberry.png" width="219" height="268" alt="Малина.">
+            <li class="gift gift--raspberry">
+              <h3 class="gift__title">Малинка даром!</h3>
+              <p class="gift__description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <!--button--loading-->
+              <a class="gift__button button" href="#">Хочу подарок</a>
             </li>
-            <li class="gift">
-              <div class="gift__wrapper">
-                <h3 class="gift__title">Маршмеллоу даром!</h3>
-                <p class="gift__description">При покупке 2 кг пломбира добавимв ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-                <!--button--loading-->
-                <a class="gift__button button" href="#">Хочу подарок</a>
-              </div>
-              <img class="gift__image" src="./images/marshmallow.png" width="219" height="268" alt="Зефирки.">
+            <li class="gift gift--marshmallow">
+              <h3 class="gift__title">Маршмеллоу даром!</h3>
+              <p class="gift__description gift__description--marshmallow">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+              <!--button--loading-->
+              <a class="gift__button button" href="#">Хочу подарок</a>
             </li>
           </ul>
         </div>
@@ -355,8 +349,8 @@
             <h2 class="about-us__title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
             <div class="about-us__description-wrapper">
               <p class="about-us__description about-us__description--ice-lolly">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
-              <p class="about-us__description about-us__description--cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-              <p class="about-us__description about-us__description--sheet">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
+              <p class="about-us__description about-us__description--cow">Закупка ингредиентов производится только<br>у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
+              <p class="about-us__description about-us__description--sheet">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты<br>и добавки произведены из натурального сырья.</p>
               <p class="about-us__description about-us__description--thermometer">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
             </div>
           </div>
@@ -394,7 +388,7 @@
         <div class="delivery__content">
           <div class="delivery__wrapper">
             <h2 class="delivery__title">Доставка любимого мороженого на дом</h2>
-            <p class="delivery__description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+            <p class="delivery__description">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
           <form class="delivery__form" action="https://echo.htmlacademy.ru/" method="post">
             <span class="delivery__form-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</span>
@@ -467,7 +461,7 @@
   <footer class="page-body__footer footer">
     <div class="container">
       <nav class="footer__nav">
-        <ul class="social-list">
+        <ul class="footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Телеграм</span>
@@ -499,7 +493,7 @@
             </a>
           </li>
         </ul>
-        <ul class="customers-list">
+        <ul class="footer__customers customers-list">
           <li class="customers-list__item">
             <a class="customers-list__link customers-list__link--suppliers" href="#">Для поставщиков</a>
           </li>

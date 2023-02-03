@@ -20,7 +20,7 @@
 
 .subscribe__description {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -30,4 +30,8 @@
 .subscribe__form {
   display: flex;
   justify-content: space-between;
+}
+
+.subscribe__form-button {
+  margin-right: 4px;
 }
