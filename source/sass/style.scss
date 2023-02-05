@@ -7,14 +7,14 @@
 @use "blocks/button";
 @use "blocks/close-button";
 @use "blocks/field";
-@use "blocks/header";
 @use "blocks/site-list";
 @use "blocks/user-list";
 @use "blocks/dropdown-list";
-@use "blocks/popover";
 @use "blocks/form-search";
 @use "blocks/form-login";
 @use "blocks/basket-list";
+@use "blocks/popover";
+@use "blocks/header";
 @use "blocks/social-list";
 @use "blocks/customers-list";
 @use "blocks/copyright";
@@ -37,8 +37,8 @@
 @use "blocks/modal";
 @use "blocks/feedback";
 @use "blocks/breadcrumbs";
-@use "blocks/filter-form";
 @use "blocks/filter-group";
+@use "blocks/filter-form";
 @use "blocks/select";
 @use "blocks/range";
 @use "blocks/control";
