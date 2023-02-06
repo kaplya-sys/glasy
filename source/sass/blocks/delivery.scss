@@ -7,6 +7,7 @@
   padding: 64px 64px 64px 100px;
   background-image: url("../../images/delivery.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -77,14 +78,6 @@
   display: inline-block;
   margin-right: 4px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.delivery__form-field::placeholder {
-  font-family: "Inter", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }

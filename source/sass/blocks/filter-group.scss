@@ -8,6 +8,7 @@
 
 .filter-group__title {
   margin-bottom: 8px;
+  padding-left: 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -23,7 +24,7 @@
   list-style-type: none;
 }
 
-.filter-group__item {
+.filter-group__item:not(:last-child) {
   margin-right: 16px;
 }
 

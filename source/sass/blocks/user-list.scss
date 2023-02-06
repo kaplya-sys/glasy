@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 450px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -51,7 +52,7 @@
 .user-list__popover {
   position: absolute;
   top: 40px;
-  right: 0;
+  right: -1px;
 }
 
 .user-list__button {

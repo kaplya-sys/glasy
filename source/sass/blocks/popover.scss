@@ -50,17 +50,12 @@
   }
 }
 
-.popover__wrapper {
-  display: block;
-}
-
 .popover__list {
   margin-bottom: 64px;
 }
 
 .popover__button {
-  display: inline-block;
-  margin-right: 19px;
+  margin-right: 27px;
   text-decoration: none;
   color: variables.$primaryLightColor;
 }

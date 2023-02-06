@@ -3,6 +3,7 @@
 .customers-list {
   display: grid;
   grid-template-columns: 1fr auto;
+  max-width: 356px;
   margin: 0;
   padding: 0;
   list-style-type: none;

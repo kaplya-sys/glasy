@@ -11,17 +11,19 @@
   margin-bottom: 16px;
 
   &--password {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 
 .form-login__button {
-  margin-right: 21px;
+  margin-right: 24px;
 }
 
 .form-login__link {
   display: flex;
   margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
   color: variables.$primaryDarkColor;
   text-underline-offset: 4px;
 

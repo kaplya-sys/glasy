@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 422px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -88,6 +89,6 @@
 
 .site-list__dropdown-list {
   position: absolute;
-  top: 44px;
+  top: 36px;
   left: 0;
 }

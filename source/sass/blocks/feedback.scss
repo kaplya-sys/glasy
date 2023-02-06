@@ -1,6 +1,7 @@
 @use "global/variables";
 
 .feedback {
+  position: relative;
   width: 570px;
   margin: auto;
   padding: 64px 64px 66px 64px;
@@ -10,16 +11,34 @@
 }
 
 .feedback__close-button {
-  display: block;
-  border: none;
+  position: absolute;
+  top: 32px;
+  right: 32px;
   width: 20px;
   height: 20px;
-  margin-left: auto;
+  padding: 0;
   background-color: transparent;
   background-image: url("../../images/close.svg");
   background-repeat: no-repeat;
-  background-position: (50%, 50%);
+  background-position: 50% 50%;
+  border: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    opacity: 0.3;
+  }
 }
 
 .feedback__title {
@@ -41,7 +60,7 @@
   width: 442px;
 
   &--message {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 }
 

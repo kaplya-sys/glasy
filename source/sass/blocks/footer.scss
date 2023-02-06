@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 48px 0 48px 2px;
+
+  &--top-line {
+    border-top: 1px solid rgba(variables.$primaryLightColor, 0.3);
+  }
 }
 
 .footer__social {

@@ -17,8 +17,8 @@
 .range__bar {
   position: absolute;
   top: 0;
-  left: 20px;
-  width: 56px;
+  left: 30px;
+  width: 75px;
   height: 2px;
   background-color: variables.$secondaryDarkColor;
 }
@@ -73,10 +73,10 @@
   }
 
   &--min {
-    left: -10px;
+    left: -6px;
   }
 
   &--max {
-    left: 50px;
+    left: 66px;
   }
 }

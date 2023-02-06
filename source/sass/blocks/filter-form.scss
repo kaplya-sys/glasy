@@ -4,21 +4,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 93px;
 }
 
 .filter-form__filter-group {
   margin-right: 24px;
   margin-bottom: 16px;
 
-  &--checkbox {
-    margin-bottom: 0;
+  &--checkbox .filter-group__list {
+    padding: 10px 24px;
   }
 }
 
 .filter-form__button {
-  align-self: flex-end;
-  margin-top: 16px;
+  margin-top: 11px;
   padding: 8px 52px;
   font-weight: 700;
   font-size: 14px;

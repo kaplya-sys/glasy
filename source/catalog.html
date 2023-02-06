@@ -10,7 +10,7 @@
 </head>
 <!--page-body--theme-1 page-body--theme-2 page-body--theme-3-->
 <body class="page-body page-body--theme-1">
-  <header class="page-body__header header">
+  <header class="page-body__header-inner header">
     <div class="container">
       <nav class="header__nav">
         <a class="header__logo" href="index.html">
@@ -24,12 +24,12 @@
               </svg>
               <span class="site-list__text">Каталог</span>
             </a>
-            <ul class="site-list__list dropdown-list">
+            <ul class="site-list__dropdown-list dropdown-list">
               <li class="dropdown-list__item dropdown-list__item--highlighted">
                 <a class="dropdown-list__link" href="#">Новинки</a>
               </li>
-              <li class="dropdown-list__item dropdown-list__item--current">
-                <a class="dropdown-list__link" href="catalog.html">Сливочное</a>
+              <li class="dropdown-list__item">
+                <a class="dropdown-list__link" href="#">Сливочное</a>
               </li>
               <li class="dropdown-list__item">
                 <a class="dropdown-list__link" href="#">Щербеты</a>
@@ -150,7 +150,7 @@
       </nav>
     </div>
   </header>
-  <main class="page-body__main main-inner">
+  <main class="page-body__main-inner main-inner">
     <div class="container">
       <header class="main-inner__main-header">
         <ul class="breadcrumbs">
@@ -168,7 +168,7 @@
       <h1 class="main-inner__title">Сливочное мороженое</h1>
       <section class="main-inner__product-range">
         <h2 class="visually-hidden">Фильтр мороженого</h2>
-        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="main-inner__form filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="filter-form__filter-group filter-group">
             <legend class="filter-group__title">Сортировка:</legend>
             <div class="select">
@@ -182,7 +182,7 @@
             <legend class="filter-group__title">Цена: 100 ₽ – 500 ₽</legend>
             <div class="range">
               <div class="range__scale">
-                <div class="range__bar" style="left: 20px; width: 56px;">
+                <div class="range__bar" style="left: 30px; width: 75px;">
                   <button class="range__toggle range__toggle--min" type="button">
                     <span class="visually-hidden">Минимальная цена</span>
                   </button>
@@ -478,7 +478,7 @@
             <li class="products-list__item">
               <h3 class="products-list__title">Банан</h3>
               <img class="products-list__image" src="./images/ice_cream_ball_5.png" width="168" height="168" alt="Шарик бананового мороженого.">
-              <p class="products-list__description">Сливочный пломбир с банановым вкусом</p>
+              <p class="products-list__description">Сливочный пломбир<br>с банановым вкусом</p>
               <div class="products-list__wrapper">
                 <span class="products-list__price">340 ₽/кг</span>
                 <button class="products-list__button" type="button">
@@ -512,7 +512,7 @@
             <li class="products-list__item">
               <h3 class="products-list__title">Клубничка</h3>
               <img class="products-list__image" src="./images/ice_cream_ball_7.png" width="168" height="168" alt="Шарик клубничного мороженого.">
-              <p class="products-list__description">Сливочный пломбир с клубничным вкусом</p>
+              <p class="products-list__description">Сливочный пломбир<br>с клубничным вкусом</p>
               <div class="products-list__wrapper">
                 <span class="products-list__price">300 ₽/кг</span>
                 <button class="products-list__button" type="button">
@@ -546,7 +546,7 @@
             <li class="products-list__item">
               <h3 class="products-list__title">Ментол</h3>
               <img class="products-list__image" src="./images/ice_cream_ball_9.png" width="168" height="168" alt="Шарик ментолового мороженого.">
-              <p class="products-list__description">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="products-list__description">Сливочный пломбир<br>с ментоловым сиропом</p>
               <div class="products-list__wrapper">
                 <span class="products-list__price">320 ₽/кг</span>
                 <button class="products-list__button" type="button">
@@ -580,7 +580,7 @@
             <li class="products-list__item">
               <h3 class="products-list__title">Крем-брюле</h3>
               <img class="products-list__image" src="./images/ice_cream_ball_11.png" width="168" height="168" alt="Шарик мороженого крем-брюле.">
-              <p class="products-list__description">Классическое крем-брюле</p>
+              <p class="products-list__description">Классическое<br>крем-брюле</p>
               <div class="products-list__wrapper">
                 <span class="products-list__price">280 ₽/кг</span>
                 <button class="products-list__button" type="button">
@@ -627,7 +627,7 @@
   </main>
   <footer class="page-body__footer footer">
     <div class="container">
-      <nav class="footer__nav">
+      <nav class="footer__nav footer__nav--top-line">
         <ul class="footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
@@ -700,7 +700,7 @@
               </defs>
             </svg>
           </a>
-          <span class="copyright__text"> Сделано в<a class="copyright__text-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
+          <span class="copyright__text"> Сделано в <a class="copyright__text-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
         </div>
       </nav>
     </div>
