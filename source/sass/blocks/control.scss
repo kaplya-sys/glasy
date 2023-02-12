@@ -29,17 +29,16 @@
   margin-right: 8px;
   border: 1.5px solid variables.$primaryDarkColor;
   border-radius: 2px;
+  transition: all ease-out 0.2s;
 }
 
 .control__input {
   &:hover + .control__checkbox {
     border-color: variables.$primaryLightColor;
-    transition: all ease-out 0.2s;
   }
 
   &--radio:checked:hover + .control__checkbox::after {
     background-color: variables.$primaryLightColor;
-    transition: all ease-out 0.2s;
   }
 
   &:focus-visible + .control__icon,

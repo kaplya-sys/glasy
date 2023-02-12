@@ -21,27 +21,24 @@
   border: 2px solid variables.$primaryLightColor;
   border-radius: 50%;
   z-index: 2;
+  transition: all ease-out 0.3s;
   cursor: pointer;
 
   &:hover {
     background-color: variables.$primaryLightColor;
-    transition: all ease-out 0.3s;
   }
 
   &:hover .slider__button-icon-path {
     fill: variables.$primaryDarkColor;
-    transition: all ease-out 0.3s;
   }
 
   &:active {
     background-color: rgba(variables.$primaryLightColor, 0.5);
     border: none;
-    transition: all ease-in 0.3s;
   }
 
   &:active .slider__button-icon-path {
     fill: variables.$primaryDarkColor;
-    transition: all ease-in 0.3s;
   }
 
 
@@ -49,12 +46,10 @@
     background-color: rgba(variables.$primaryLightColor, 0.3);
     border: none;
     outline: 2px solid variables.$primaryDarkColor;
-    transition: all linear 0.2s;
   }
 
   &:focus-visible .slider__button-icon-path {
     fill: variables.$primaryDarkColor;
-    transition: all linear 0.2s;
   }
 
   &:disabled {

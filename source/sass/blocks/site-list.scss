@@ -25,7 +25,9 @@
   line-height: 20px;
   text-decoration: none;
   color: variables.$primaryDarkColor;
-  transition: all ease-out 0.3s;
+  border-radius: 30px;
+  outline-offset: 0;
+  transition: all ease 0.3s;
 
   &:hover + .dropdown-list {
     display: block;
@@ -33,26 +35,20 @@
 
   &:hover {
     background-color: rgba(variables.$primaryLightColor, 0.5);
-    border-radius: 30px;
   }
 
   &:active {
     background-color: variables.$primaryLightColor;
-    border-radius: 30px;
-    transition: all ease-in 0.3s;
   }
 
   &:focus-visible {
     background: rgba(variables.$primaryLightColor, 0.5);
-    border-radius: 30px;
     outline: 2px solid variables.$primaryDarkColor;
-    transition: all linear 0.2s;
   }
 
   &--current {
     color: variables.$primaryLightColor;
     background-color: variables.$bright;
-    border-radius: 30px;
 
     &:hover {
       background-color: rgba(variables.$bright, 0.6);

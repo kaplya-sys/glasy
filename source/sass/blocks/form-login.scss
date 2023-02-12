@@ -16,30 +16,28 @@
 }
 
 .form-login__button {
-  margin-right: 24px;
+  margin-right: 17px;
 }
 
 .form-login__link {
   display: flex;
   margin-bottom: 4px;
+  padding: 0 7px;
   font-size: 14px;
   line-height: 20px;
-  color: variables.$primaryDarkColor;
   text-underline-offset: 4px;
+  color: variables.$primaryDarkColor;
+  border-radius: 30px;
 
   &:hover {
-    opacity: 0.5;
+    color: variables.$extraBright;
   }
 
   &:active {
-    opacity: 0.3;
-  }
-
-  &:focus {
-    outline: none;
+    color: rgba(variables.$extraBright, 0.5);
   }
 
   &:focus-visible {
-    opacity: 0.3;
+    outline: 2px solid variables.$primaryDarkColor;
   }
 }

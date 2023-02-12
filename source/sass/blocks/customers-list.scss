@@ -3,48 +3,48 @@
 .customers-list {
   display: grid;
   grid-template-columns: 1fr auto;
-  max-width: 356px;
+  max-width: 384px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 .customers-list__item {
-  margin-right: 24px;
+  margin-right: 12px;
 }
 
 .customers-list__link {
-  display: flex;
+  display: inline-block;
+  padding: 0 7px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   color: variables.$primaryDarkColor;
+  border-radius: 30px;
 
   &:hover {
-    opacity: 0.5;
+    color: variables.$primaryLightColor;
   }
 
   &:active {
-    opacity: 0.3;
-  }
-
-  &:focus {
-    outline: none;
+    color: rgba(variables.$primaryLightColor, 0.5);
   }
 
   &:focus-visible {
-    opacity: 0.3;
+    outline: 2px solid variables.$primaryDarkColor;
   }
 
   &--suppliers {
     position: relative;
+    margin-left: -21px;
+    padding-left: 27px;
     font-weight: 700;
 
     &::before {
       position: absolute;
       top: 2px;
-      left: -24px;
+      left: 4px;
       width: 16px;
       height: 16px;
       background-image: url("../../images/heart.svg");

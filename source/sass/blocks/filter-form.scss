@@ -25,24 +25,22 @@
   border: none;
   border-radius: 20px;
   outline: 2px solid variables.$primaryLightColor;
+  transition: all ease-out 0.3s;
   cursor: pointer;
 
   &:hover {
     background-color: variables.$primaryLightColor;
     outline: 2px solid rgba(variables.$primaryLightColor, 0.3);
-    transition: all ease-out 0.3s;
   }
 
   &:focus-visible {
     background-color: rgba(variables.$primaryLightColor, 0.3);
     outline: 2px solid variables.$primaryDarkColor;
-    transition: all linear 0.2s;
   }
 
   &:active {
     background-color: rgba(variables.$primaryLightColor, 0.5);
     outline: none;
-    transition: all linear 0.2s;
   }
 
   &:disabled {

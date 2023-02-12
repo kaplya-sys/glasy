@@ -67,23 +67,21 @@
   background-color: variables.$extraBright;
   border: none;
   border-radius: 50%;
+  transition: all ease-out 0.3s;
   cursor: pointer;
 
   &:hover {
     background-color: variables.$primaryLightColor;
     border: 2px solid variables.$extraBright;
-    transition: all ease-out 0.3s;
   }
 
   &:hover .products-list__button-icon-path {
     fill: variables.$primaryDarkColor;
-    transition: all ease-out 0.3s;
   }
 
   &:active {
     background-color: variables.$extraLight;
     border: 2px solid variables.$extraBright;
-    transition: all ease-in 0.3s;
   }
 
   &:focus {
@@ -93,12 +91,10 @@
   &:focus-visible {
     background-color: variables.$extraBright;
     border: 2px solid variables.$primaryDarkColor;
-    transition: all linear 0.2s;
   }
 
   &:focus-visible .products-list__button-icon-path {
     fill: variables.$primaryLightColor;
-    transition: all linear 0.2s;
   }
 
   &:disabled {

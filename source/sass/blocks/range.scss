@@ -33,6 +33,7 @@
   border: none;
   border-radius: 50%;
   transform: translateY(-50%);
+  transition: all ease-out 0.3s;
   cursor: pointer;
 
   &::after {
@@ -49,17 +50,14 @@
 
   &:hover {
     background-color: variables.$primaryLightColor;
-    transition: all ease-out 0.3s;
   }
 
   &:hover::after {
     background-color: variables.$primaryDarkColor;
-    transition: all ease-out 0.3s;
   }
 
   &:active::after {
     background-color: variables.$primaryDarkColor;
-    transition: all ease-in 0.3s;
   }
 
   &:focus {
@@ -69,7 +67,6 @@
   &:focus-visible {
     background-color: variables.$primaryLightColor;
     border: 2px solid variables.$primaryDarkColor;
-    transition: all linear 0.2s;
   }
 
   &--min {
