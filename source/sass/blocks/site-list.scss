@@ -27,7 +27,7 @@
   color: variables.$primaryDarkColor;
   border-radius: 30px;
   outline-offset: 0;
-  transition: all ease 0.3s;
+  transition: all ease 0.1s;
 
   &:hover + .dropdown-list {
     display: block;

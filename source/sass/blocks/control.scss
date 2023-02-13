@@ -45,7 +45,7 @@
   &:focus-visible ~ .control__icon--checked,
   &:focus-visible + .control__checkbox {
     outline: 2px solid variables.$primaryDarkColor;
-    outline-offset: 1px;
+    outline-offset: 2px;
   }
 
   &:disabled + .control__checkbox {

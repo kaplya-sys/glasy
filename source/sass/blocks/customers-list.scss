@@ -10,7 +10,17 @@
 }
 
 .customers-list__item {
+  position: relative;
   margin-right: 12px;
+}
+
+.customers-list__icon {
+  position: absolute;
+  top: 3px;
+  left: -18px;
+  width: 16px;
+  height: 16px;
+  color: variables.$primaryDarkColor;
 }
 
 .customers-list__link {
@@ -27,7 +37,15 @@
     color: variables.$primaryLightColor;
   }
 
+  &:hover + .customers-list__icon {
+    color: variables.$primaryLightColor;
+  }
+
   &:active {
+    color: rgba(variables.$primaryLightColor, 0.5);
+  }
+
+  &:active + .customers-list__icon {
     color: rgba(variables.$primaryLightColor, 0.5);
   }
 
@@ -40,16 +58,5 @@
     margin-left: -21px;
     padding-left: 27px;
     font-weight: 700;
-
-    &::before {
-      position: absolute;
-      top: 2px;
-      left: 4px;
-      width: 16px;
-      height: 16px;
-      background-image: url("../../images/heart.svg");
-      background-repeat: no-repeat;
-      content: "";
-    }
   }
 }

@@ -58,28 +58,3 @@
   font-size: 18px;
   line-height: 22px;
 }
-
-.basket-list__close-icon {
-  display: block;
-  color: variables.$primaryDarkColor;
-}
-
-.basket-list__close-button {
-  padding: 5px;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &:hover .basket-list__close-icon {
-    color: variables.$extraBright;
-  }
-
-  &:active .basket-list__close-icon {
-    color: rgba(variables.$extraBright, 0.5);
-  }
-
-  &:focus-visible {
-    outline: 2px solid variables.$primaryDarkColor;
-  }
-}

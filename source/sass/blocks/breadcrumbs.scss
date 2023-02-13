@@ -32,24 +32,23 @@
   line-height: 20px;
   text-decoration: none;
   color: variables.$primaryDarkColor;
+  border-radius: 30px;
 
   &:not(.breadcrumbs__link--current):hover {
-    opacity: 0.5;
+    color: variables.$primaryLightColor;
   }
 
   &:active {
-    opacity: 0.3;
-  }
-
-  &:focus {
-    outline: none;
+    color: rgba(variables.$primaryLightColor, 0.5);
   }
 
   &:focus-visible {
-    opacity: 0.3;
+    outline: 2px solid variables.$primaryDarkColor;
+    outline-offset: 2px;
   }
 
   &--current {
     border-bottom: 1px solid variables.$primaryDarkColor;
+    border-radius: 0;
   }
 }

@@ -5,28 +5,27 @@
     display: block;
   }
 
-  &:focus-within .tooltip__icon {
-    opacity: 0.5;
+  &:hover .tooltip__icon {
+    color: variables.$extraBright;
   }
 
   &:active .tooltip__icon {
-    opacity: 0.5;
+    color: rgba(variables.$extraBright, 0.5);
   }
 
-  &:focus-within {
-    outline: none;
+  &:focus-visible {
+    border-radius: 30px;
+    outline: 2px solid variables.$primaryDarkColor;
+    outline-offset: 1px;
   }
 }
 
 .tooltip__icon {
   display: flex;
+  color: variables.$primaryDarkColor;
 
   &:hover + .tooltip__text {
     display: block;
-  }
-
-  &:hover {
-    opacity: 0.3;
   }
 }
 

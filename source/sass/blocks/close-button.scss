@@ -1,10 +1,46 @@
+@use "global/variables";
+
 .close-button {
-  width: 16px;
-  height: 16px;
+  position: relative;
+  padding: 0;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
-  background-image: url("../../images/close.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   border: none;
-  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 1.3px;
+    background-color: variables.$primaryDarkColor;
+    border-radius: 10px;
+    content: "";
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover::after,
+  &:hover::before {
+    background-color: variables.$extraBright;
+  }
+
+  &:active::after,
+  &:active::before {
+    background-color: rgba(variables.$extraBright, 0.5);
+  }
+
+  &:focus-visible {
+    outline: 2px solid variables.$primaryDarkColor;
+  }
 }
