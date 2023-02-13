@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
@@ -175,7 +174,7 @@
             <legend class="filter-group__title">Цена: 100 ₽ – 500 ₽</legend>
             <div class="range">
               <div class="range__scale">
-                <div class="range__bar" style="left: 30px; width: 75px;">
+                <div class="range__bar">
                   <button class="range__toggle range__toggle--min" type="button">
                     <span class="visually-hidden">Минимальная цена</span>
                   </button>
@@ -225,27 +224,27 @@
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="chocolate" checked>
-                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-chocolate)">
                       <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-chocolate">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
                   </svg>
-                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
-                      <g clip-path="url(#b)">
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Отмеченный чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-chocolate-checked)">
+                      <g clip-path="url(#checkbox-chocolate-checked-b)">
                         <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
                       </g>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-chocolate-checked">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
-                      <clipPath id="b">
+                      <clipPath id="checkbox-chocolate-checked-b">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
@@ -256,27 +255,27 @@
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="sugar-sprinkles" checked>
-                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-sprinkles)">
                       <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-sprinkles">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
                   </svg>
-                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
-                      <g clip-path="url(#b)">
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Отмеченный чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-sprinkles-checked)">
+                      <g clip-path="url(#checkbox-sprinkles-checked-b)">
                         <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
                       </g>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-sprinkles-checked">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
-                      <clipPath id="b">
+                      <clipPath id="checkbox-sprinkles-checked-b">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
@@ -287,27 +286,27 @@
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="fruits">
-                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-fruits)">
                       <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-fruits">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
                   </svg>
-                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
-                      <g clip-path="url(#b)">
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Отмеченный чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-fruits-checked)">
+                      <g clip-path="url(#checkbox-fruits-checked-b)">
                         <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
                       </g>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-fruits-checked">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
-                      <clipPath id="b">
+                      <clipPath id="checkbox-fruits-checked-b">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
@@ -318,27 +317,27 @@
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="syrups">
-                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-syrups)">
                       <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-syrups">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
                   </svg>
-                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
-                      <g clip-path="url(#b)">
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Отмеченный чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-syrups-checked)">
+                      <g clip-path="url(#checkbox-syrups-checked-b)">
                         <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
                       </g>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-syrups-checked">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
-                      <clipPath id="b">
+                      <clipPath id="checkbox-syrups-checked-b">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
@@ -349,27 +348,27 @@
               <li class="filter-group__item">
                 <label class="control">
                   <input class="visually-hidden control__input control__input--checkbox" type="checkbox" value="jams">
-                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
+                  <svg class="control__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-jams)">
                       <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.963.963 0 0 1 .68-.282h11.408c.242 0 .34.029.395.053.057.026.13.074.286.23a.91.91 0 0 1 .282.68v11.369a.963.963 0 0 1-.964 1H2.296a.963.963 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.223 12.929a2.296 2.296 0 0 1-2.136 1.454H2.296A2.296 2.296 0 0 1 0 13.702V2.296A2.296 2.296 0 0 1 1.458.158.664.664 0 0 1 1.89 0h11.813c.337 0 .643.038.934.166.287.127.5.318.69.507.481.481.672 1.057.672 1.623V14.11c0 .166-.06.318-.16.435Z" clip-rule="evenodd"/>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-jams">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
                   </svg>
-                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                    <g clip-path="url(#a)">
-                      <g clip-path="url(#b)">
+                  <svg class="control__icon control__icon--checked" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Отмеченный чекбокс." focusable="false">
+                    <g clip-path="url(#checkbox-jams-checked)">
+                      <g clip-path="url(#checkbox-jams-checked-b)">
                         <path class="control__icon-path" fill="#2D3440" fill-rule="evenodd" d="M1.615 1.615a.962.962 0 0 1 .68-.282h8.96a.667.667 0 1 0 0-1.333h-8.96A2.295 2.295 0 0 0 0 2.296v11.407A2.297 2.297 0 0 0 2.296 16h11.402a2.295 2.295 0 0 0 2.295-2.296V8a.667.667 0 0 0-1.333 0v5.703a.963.963 0 0 1-.962.963H2.296a.962.962 0 0 1-.963-.963V2.296c0-.255.102-.5.282-.68Zm14.202.325a.667.667 0 1 0-.968-.917L7.614 8.66 5.782 6.727a.667.667 0 0 0-.967.917l2.315 2.444a.667.667 0 0 0 .968 0l7.719-8.148Z" clip-rule="evenodd"/>
                       </g>
                     </g>
                     <defs>
-                      <clipPath id="a">
+                      <clipPath id="checkbox-jams-checked">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
-                      <clipPath id="b">
+                      <clipPath id="checkbox-jams-checked-b">
                         <path fill="#fff" d="M0 0h16v16H0z"/>
                       </clipPath>
                     </defs>
@@ -667,7 +666,7 @@
         <ul class="footer__customers customers-list">
           <li class="customers-list__item">
             <a class="customers-list__link customers-list__link--suppliers" href="#">Для поставщиков</a>
-            <svg class="customers-list__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+            <svg class="customers-list__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-label="Сердечко." focusable="false">
               <path fill="currentColor" d="M13.89 2.994a3.667 3.667 0 0 0-5.186 0l-.706.707-.707-.707a3.668 3.668 0 0 0-5.187 5.187l.707.707 5.187 5.187 5.186-5.187.707-.707a3.667 3.667 0 0 0 0-5.187Z"/>
             </svg>
           </li>
@@ -683,20 +682,18 @@
         </ul>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/">
-            <svg class="copyright__icon" width="93" height="27" viewBox="0 0 93 27" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#a)" fill="#2D3440">
-                <path
-                  d="M0 10.4v2.1h2v-2H0ZM9.4 3.7c-1.2 0-2.3.5-2.9 1.4V0H4.7v12.5h1.6V8.2c0-1.7 1.1-3 2.7-3 1.5 0 2.3 1.2 2.3 2.7v4.6h1.7v-5c0-2.3-1.5-3.8-3.7-3.8ZM21.5 4h-3.9V.8H16v3h-1.6v1.6H16v4.8c0 1.4.8 2.2 2.2 2.2h3.3v-1.6h-3c-.6 0-.9-.3-.9-.9V5.5h4V3.9ZM33.3 3.7c-1.4 0-2.4.6-3 1.6a3 3 0 0 0-2.7-1.6c-1.1 0-2 .6-2.5 1.4V4h-1.6v8.6H25V8.1c0-1.6.8-2.8 2.1-2.8 1.2 0 2 .8 2 2.1v5.1h1.6V8c0-2 1.1-2.7 2.1-2.7 1.2 0 2 .8 2 2.1v5.1h1.6V7.2c0-2-1.2-3.5-3.2-3.5ZM38.7 10.3c0 1.4.8 2.2 2.2 2.2h1.7v-1.6h-1.4c-.6 0-.9-.3-.9-.8V0h-1.6v10.3ZM23.4 16a3.7 3.7 0 0 0-3.2-1.5c-2.5 0-4.3 1.8-4.3 4.5 0 2.6 1.8 4.5 4.3 4.5 1.4 0 2.5-.7 3.1-1.6v1.3H25v-8.5h-1.6v1.2Zm-3 5.9c-1.7 0-2.9-1.3-2.9-3 0-1.6 1.2-2.9 3-2.9 1.7 0 2.9 1.3 2.9 3 0 1.6-1.2 2.9-3 2.9ZM35.8 17.8c-.4-2-2.2-3.3-4.4-3.3-2.7 0-4.5 2-4.5 4.5s1.8 4.5 4.5 4.5c2.2 0 4-1.5 4.4-3.4H34c-.3 1-1.3 1.8-2.6 1.8-1.8 0-2.9-1.3-2.9-3 0-1.6 1.1-2.9 3-2.9 1.2 0 2.2.8 2.5 1.8h1.8ZM44.5 16a3.7 3.7 0 0 0-3-1.5c-2.6 0-4.5 1.8-4.5 4.5 0 2.6 1.9 4.5 4.4 4.5 1.4 0 2.4-.7 3-1.6h.1v1.3h1.7v-8.5h-1.7v1.2Zm-2.9 5.9c-1.8 0-3-1.3-3-3 0-1.6 1.2-2.9 3-2.9s3 1.3 3 3c0 1.6-1.2 2.9-3 2.9ZM55.5 16c-.7-.9-1.8-1.5-3.1-1.5-2.5 0-4.4 1.8-4.4 4.5 0 2.6 1.8 4.5 4.4 4.5 1.3 0 2.4-.6 3-1.5h.1v1.2h1.6V10.8h-1.6V16Zm-2.9 6c-1.8 0-3-1.4-3-3s1.2-3 3-3 2.9 1.4 2.9 3-1.1 3-2.9 3ZM63.3 14.5c-2.6 0-4.4 2-4.4 4.5 0 2.4 1.7 4.5 4.5 4.5 2 0 3.6-1.1 4.2-3h-1.7c-.4.9-1.3 1.4-2.5 1.4-1.5 0-2.6-1-2.7-2.4h7c.3-2.8-1.5-5-4.4-5Zm0 1.5c1.4 0 2.4.9 2.7 2h-5.3c.2-1.1 1.3-2 2.6-2ZM79.4 14.5c-1.3 0-2.3.6-2.9 1.6a3 3 0 0 0-2.7-1.6 3 3 0 0 0-2.6 1.4v-1.2h-1.6v8.5h1.6V19c0-1.7.9-2.8 2.2-2.9 1.2 0 1.9.9 1.9 2.2v5h1.6v-4.5c0-1.9 1.2-2.7 2.2-2.7 1.2 0 1.9.9 1.9 2.2v5h1.6V18c0-2-1.2-3.5-3.2-3.5ZM88.5 21.9l-3-7.2h-1.8l4 9.3c-.3.8-.6 1-1.4 1h-2v1.7h2c1.5 0 2.3-.7 2.8-2.1l3.8-10h-1.7L88.5 22Z" />
+            <svg class="copyright__icon" width="93" height="27" viewBox="0 0 93 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип HTML Академии." focusable="false">
+              <g clip-path="url(#copyright)" fill="currentColor">
+                <path d="M0 10.4v2.1h2v-2H0ZM9.4 3.7c-1.2 0-2.3.5-2.9 1.4V0H4.7v12.5h1.6V8.2c0-1.7 1.1-3 2.7-3 1.5 0 2.3 1.2 2.3 2.7v4.6h1.7v-5c0-2.3-1.5-3.8-3.7-3.8ZM21.5 4h-3.9V.8H16v3h-1.6v1.6H16v4.8c0 1.4.8 2.2 2.2 2.2h3.3v-1.6h-3c-.6 0-.9-.3-.9-.9V5.5h4V3.9ZM33.3 3.7c-1.4 0-2.4.6-3 1.6a3 3 0 0 0-2.7-1.6c-1.1 0-2 .6-2.5 1.4V4h-1.6v8.6H25V8.1c0-1.6.8-2.8 2.1-2.8 1.2 0 2 .8 2 2.1v5.1h1.6V8c0-2 1.1-2.7 2.1-2.7 1.2 0 2 .8 2 2.1v5.1h1.6V7.2c0-2-1.2-3.5-3.2-3.5ZM38.7 10.3c0 1.4.8 2.2 2.2 2.2h1.7v-1.6h-1.4c-.6 0-.9-.3-.9-.8V0h-1.6v10.3ZM23.4 16a3.7 3.7 0 0 0-3.2-1.5c-2.5 0-4.3 1.8-4.3 4.5 0 2.6 1.8 4.5 4.3 4.5 1.4 0 2.5-.7 3.1-1.6v1.3H25v-8.5h-1.6v1.2Zm-3 5.9c-1.7 0-2.9-1.3-2.9-3 0-1.6 1.2-2.9 3-2.9 1.7 0 2.9 1.3 2.9 3 0 1.6-1.2 2.9-3 2.9ZM35.8 17.8c-.4-2-2.2-3.3-4.4-3.3-2.7 0-4.5 2-4.5 4.5s1.8 4.5 4.5 4.5c2.2 0 4-1.5 4.4-3.4H34c-.3 1-1.3 1.8-2.6 1.8-1.8 0-2.9-1.3-2.9-3 0-1.6 1.1-2.9 3-2.9 1.2 0 2.2.8 2.5 1.8h1.8ZM44.5 16a3.7 3.7 0 0 0-3-1.5c-2.6 0-4.5 1.8-4.5 4.5 0 2.6 1.9 4.5 4.4 4.5 1.4 0 2.4-.7 3-1.6h.1v1.3h1.7v-8.5h-1.7v1.2Zm-2.9 5.9c-1.8 0-3-1.3-3-3 0-1.6 1.2-2.9 3-2.9s3 1.3 3 3c0 1.6-1.2 2.9-3 2.9ZM55.5 16c-.7-.9-1.8-1.5-3.1-1.5-2.5 0-4.4 1.8-4.4 4.5 0 2.6 1.8 4.5 4.4 4.5 1.3 0 2.4-.6 3-1.5h.1v1.2h1.6V10.8h-1.6V16Zm-2.9 6c-1.8 0-3-1.4-3-3s1.2-3 3-3 2.9 1.4 2.9 3-1.1 3-2.9 3ZM63.3 14.5c-2.6 0-4.4 2-4.4 4.5 0 2.4 1.7 4.5 4.5 4.5 2 0 3.6-1.1 4.2-3h-1.7c-.4.9-1.3 1.4-2.5 1.4-1.5 0-2.6-1-2.7-2.4h7c.3-2.8-1.5-5-4.4-5Zm0 1.5c1.4 0 2.4.9 2.7 2h-5.3c.2-1.1 1.3-2 2.6-2ZM79.4 14.5c-1.3 0-2.3.6-2.9 1.6a3 3 0 0 0-2.7-1.6 3 3 0 0 0-2.6 1.4v-1.2h-1.6v8.5h1.6V19c0-1.7.9-2.8 2.2-2.9 1.2 0 1.9.9 1.9 2.2v5h1.6v-4.5c0-1.9 1.2-2.7 2.2-2.7 1.2 0 1.9.9 1.9 2.2v5h1.6V18c0-2-1.2-3.5-3.2-3.5ZM88.5 21.9l-3-7.2h-1.8l4 9.3c-.3.8-.6 1-1.4 1h-2v1.7h2c1.5 0 2.3-.7 2.8-2.1l3.8-10h-1.7L88.5 22Z" />
               </g>
               <defs>
-                <clipPath id="a">
-                  <path fill="#fff" d="M0 0h93v26.7H0z" />
+                <clipPath id="copyright">
+                  <path fill="#fff" d="M0 0h93v26.7H0z"/>
                 </clipPath>
               </defs>
             </svg>
           </a>
-          <span class="copyright__text"> Сделано в <a class="copyright__text-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
+          <span class="copyright__text">Сделано в <a class="copyright__text-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
         </div>
       </nav>
     </div>
