@@ -33,7 +33,7 @@
   border: none;
   border-radius: 50%;
   transform: translateY(-50%);
-  transition: all ease-out 0.3s;
+  transition: background-color ease-in 0.3s;
   cursor: pointer;
 
   &::after {

@@ -63,7 +63,7 @@
   border: 2px solid transparent;
   border-radius: 30px;
   background-color: rgba($color: variables.$primaryLightColor, $alpha: 0.3);
-  transition: all ease-out 0.3s;
+  transition: background-color ease-in 0.3s;
   cursor: pointer;
 
   &:hover {

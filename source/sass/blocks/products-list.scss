@@ -67,7 +67,7 @@
   background-color: variables.$extraBright;
   border: none;
   border-radius: 50%;
-  transition: all ease-out 0.3s;
+  transition: background-color ease-in 0.3s;
   cursor: pointer;
 
   &:hover {

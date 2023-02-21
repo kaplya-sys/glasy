@@ -21,7 +21,7 @@
   border: 2px solid variables.$primaryLightColor;
   border-radius: 50%;
   z-index: 2;
-  transition: all ease-out 0.3s;
+  transition: background-color ease-in 0.3s;
   cursor: pointer;
 
   &:hover {
