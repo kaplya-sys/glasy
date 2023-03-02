@@ -12,7 +12,7 @@
 
 .user-list__item {
   position: relative;
-  margin-right: 16px;
+  margin-right: 13px;
 
   &:last-child,
   &:first-child {
@@ -21,7 +21,7 @@
 }
 
 .user-list__contact-phone {
-  margin-right: 8px;
+  margin-right: 9px;
   padding: 0 7px;
   font-weight: 700;
   font-size: 16px;
@@ -53,6 +53,7 @@
   display: flex;
   align-items: center;
   padding: 6px 16px;
+  font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
